@@ -1,7 +1,7 @@
 global class Batch01AccountChiffreAffaire implements Database.Batchable<sObject>{
     
    global Database.QueryLocator start(Database.BatchableContext info){ 
-       //Requeter seulement les comptes qui ont au moins une commande avec le Status 'Ordered'
+       //Only requests the accounts with at least one order under the Status 'Ordered'
        return Database.getQueryLocator('SELECT Id FROM Account');
 
    }
