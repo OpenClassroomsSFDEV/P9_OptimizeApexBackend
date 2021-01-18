@@ -6,6 +6,6 @@
     }
   ],
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0"
+  "sfdcLoginUrl": "https://creative-raccoon-hshavm-dev-ed.my.salesforce.com/",
+  "sourceApiVersion": "50.0"
 }
