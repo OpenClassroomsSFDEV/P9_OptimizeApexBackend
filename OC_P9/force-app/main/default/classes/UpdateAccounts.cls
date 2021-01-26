@@ -8,10 +8,11 @@ global class Batch01AccountChiffreAffaire implements Database.Batchable<sObject>
     
    global void execute(Database.BatchableContext info, List<Account> scope){      
        list<Order> listOrders =  [SELECT Id, TotalAmount, AccountId FROM Order];
-       
+       // TODO : passer en for(sObject o:iterable))
 		for(integer i=0; i < scope.size(); i++){
 			Account myAccount = scope[i];
-			myAccount.Chiffre_d_affaire__c = 0;
+            myAccount.Chiffre_d_affaire__c = 0;
+            // TODO : passer en for(sObject o:iterable))
            for(integer j=0; j < listOrders.size(); j++){
                if(listOrders[j].AccountId == myAccount.Id){
                    myAccount.Chiffre_d_affaire__c = myAccount.Chiffre_d_affaire__c + listOrders[j].TotalAmount;
@@ -21,7 +22,7 @@ global class Batch01AccountChiffreAffaire implements Database.Batchable<sObject>
        
        update scope;
    }    
-    
+    // TODO : pas de notification ?
    global void finish(Database.BatchableContext info){     
        
    } 

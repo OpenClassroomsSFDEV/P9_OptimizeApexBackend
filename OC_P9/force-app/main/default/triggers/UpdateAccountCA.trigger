@@ -1,7 +1,7 @@
 trigger UpdateAccountCA on Order (after update) {
 	
     set<Id> setAccountIds = new set<Id>();
-    
+    // TODO : reformater en for(a:collection)
     for(integer i=0; i< trigger.new.size(); i++){
         Order newOrder= trigger.new[i];
        
