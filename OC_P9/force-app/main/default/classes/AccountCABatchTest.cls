@@ -8,6 +8,10 @@ private class AccountCABatchTest {
         Integer quantity = 5;
         List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
         List<Order> testOrders = TestDataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
+        for (Order order : testOrders) {
+            order.Status = 'Activated';
+        }
+        update testOrders;
     }
     /**
      * test du calcul de chiffre d'affaire
