@@ -53,7 +53,6 @@ public class TestDataFactory {
         List<OrderItem> items = new List<OrderItem>();
         OrderItem item;
         for (Order order : orders) {
-            order.Status = 'Activated';
             item = new OrderItem (
                 OrderId=order.Id,
                 PricebookEntryId=pbe.Id,
@@ -63,7 +62,6 @@ public class TestDataFactory {
             items.add(item);
         }
         insert items;
-        update orders;
 
         return orders;
     }
