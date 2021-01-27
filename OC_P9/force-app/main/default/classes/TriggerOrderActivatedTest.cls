@@ -2,7 +2,7 @@
 private class TriggerOrderActivatedTest {
     @isTest static void test_AccountCA_isCorrect() {
         Integer nbAccount = 10;
-        Integer nbOrder = 5;
+        Integer nbOrder = 105;
         Integer price = 10;
         Integer quantity = 5;
         List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
