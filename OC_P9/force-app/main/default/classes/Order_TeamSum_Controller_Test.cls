@@ -1,21 +1,21 @@
 @isTest
-private with sharing class OrdersTeamControllerTest {
+private with sharing class Order_TeamSum_Controller_Test {
     @TestSetup
     static void makeData(){
         Integer nbAccount = 10;
         Integer nbOrder = 5;
         Integer price = 10;
         Integer quantity = 5;
-        List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
-        List<Order> testOrders = TestDataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
+        List<Account> testAccounts = Test_DataFactory.createAccounts(nbAccount);
+        List<Order> testOrders = Test_DataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
         for (Order order : testOrders) {
             order.Status = 'Activated';
         }
         update testOrders;
     }
 
-    @isTest static void test_sumOrders() {
-        OrdersTeamController controller = new OrdersTeamController();
+    @isTest static void test_sumOrder() {
+        Order_TeamSum_Controller controller = new Order_TeamSum_Controller();
         Test.startTest();
         decimal ordersSum = controller.ordersSum;
         Test.stopTest();
