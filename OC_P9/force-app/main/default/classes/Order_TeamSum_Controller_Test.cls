@@ -14,7 +14,7 @@ private with sharing class Order_TeamSum_Controller_Test {
         update testOrders;
     }
 
-    @isTest static void test_sumOrders() {
+    @isTest static void test_sumOrder() {
         Order_TeamSum_Controller controller = new Order_TeamSum_Controller();
         Test.startTest();
         decimal ordersSum = controller.ordersSum;

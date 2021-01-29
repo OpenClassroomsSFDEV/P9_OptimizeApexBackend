@@ -1,6 +1,6 @@
 @isTest
 private class Trigger_Order_NetAmount_Test {
-    @isTest static void test_netAmount_isCorrect() {
+    @isTest static void test_netAmount_whenOrderUpdated() {
         Integer nbAccount = 1;
         Integer nbOrder = 5;
         Integer price = 10;
@@ -19,7 +19,9 @@ private class Trigger_Order_NetAmount_Test {
             System.assertEquals(true, result.isSuccess(), 'update must be successful');
             System.assertEquals(0, result.getErrors().size(), 'must get no error');
         }        
-        testOrders = [SELECT NetAmount__c FROM Order];
+        testOrders = [SELECT NetAmount__c
+                        FROM Order
+                    ];
         Integer netAmountExpected = 5 * 10 - 15;
         for(Order order : testOrders){
             System.assertEquals(netAmountExpected, order.NetAmount__c, 'NetAmount incorrect');

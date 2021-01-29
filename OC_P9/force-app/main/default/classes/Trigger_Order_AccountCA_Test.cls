@@ -1,6 +1,6 @@
 @isTest
 private class Trigger_Order_AccountCA_Test {
-    @isTest static void test_AccountCA_isCorrect() {
+    @isTest static void test_AccountCA_whenOrderActivated() {
         Integer nbAccount = 10;
         Integer nbOrder = 105;
         Integer price = 10;
@@ -16,9 +16,9 @@ private class Trigger_Order_AccountCA_Test {
         Test.stopTest();
         
         testAccounts = [SELECT Id, Chiffre_d_affaire__c
-                                FROM Account
-                                WHERE Id IN (SELECT AccountId FROM Order WHERE Status='Activated')
-                                ];
+                            FROM Account
+                            WHERE Id IN (SELECT AccountId FROM Order WHERE Status='Activated')
+                        ];
         System.assertEquals(nbAccount, testAccounts.size(), 'mauvais nombre de comptes');
         Integer expectedCA = nbOrder * price * quantity;
         for(Account account : testAccounts){

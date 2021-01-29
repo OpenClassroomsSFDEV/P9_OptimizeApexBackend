@@ -16,7 +16,7 @@ private class Account_CA_Batch_Test {
     /**
      * test du calcul de chiffre d'affaire
      */
-    @isTest static void test_batch_updatesCA() {
+    @isTest static void test_CA_whenBatchExecuted() {
 
         Test.startTest();
         Account_CA_Batch obj = new Account_CA_Batch();
@@ -24,8 +24,8 @@ private class Account_CA_Batch_Test {
         Test.stopTest();
 
         List<Account> results = [SELECT Id, Chiffre_d_affaire__c
-                                FROM Account
-                                WHERE Id IN (SELECT AccountId FROM Order WHERE Status='Activated')
+                                    FROM Account
+                                    WHERE Id IN (SELECT AccountId FROM Order WHERE Status='Activated')
                                 ];
         System.assertEquals(10, results.size(), 'mauvais nombre de comptes');
         for(Account account : results){

@@ -8,7 +8,10 @@ trigger Order_AccountCA on Order (after update) {
   }
   // mise à jour du CA
   if(accountIds.size() > 0){
-    List<Account> accountsWithOrders = [SELECT Id, (SELECT TotalAmount FROM Orders WHERE Status='Activated') FROM Account WHERE Id IN :accountIds];
+    List<Account> accountsWithOrders = [SELECT Id, (SELECT TotalAmount FROM Orders WHERE Status='Activated')
+                                          FROM Account
+                                          WHERE Id IN :accountIds
+                                        ];
     Account_CA_Service.calculateCA(accountsWithOrders);
   }
 }
