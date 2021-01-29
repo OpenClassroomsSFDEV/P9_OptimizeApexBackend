@@ -2,7 +2,7 @@
  * Traitement par lot pour calculer le chiffre d'affaire des comptes
  * 
  */
-global class AccountCABatch implements Database.Batchable<sObject>{
+global class Account_CA_Batch implements Database.Batchable<sObject>{
     
     global Database.QueryLocator start(Database.BatchableContext info){
         // liste des comptes avec commandes actives
@@ -10,7 +10,7 @@ global class AccountCABatch implements Database.Batchable<sObject>{
     }
     // calcul du chiffre d'affaire
     global void execute(Database.BatchableContext info, List<Account> accountsWithOrders){
-        AccountService.calculateCA(accountsWithOrders);
+        Account_CA_Service.calculateCA(accountsWithOrders);
     }  
     
     global void finish(Database.BatchableContext info){

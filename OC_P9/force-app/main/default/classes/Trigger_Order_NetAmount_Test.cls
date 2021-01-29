@@ -1,12 +1,12 @@
 @isTest
-private class TriggerOrderNetAmountTest {
+private class Trigger_Order_NetAmount_Test {
     @isTest static void test_netAmount_isCorrect() {
         Integer nbAccount = 1;
         Integer nbOrder = 5;
         Integer price = 10;
         Integer quantity = 5;
-        List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
-        List<Order> testOrders = TestDataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
+        List<Account> testAccounts = Test_DataFactory.createAccounts(nbAccount);
+        List<Order> testOrders = Test_DataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
         for(Order order : testOrders){
             order.ShipmentCost__c = 15;
         }

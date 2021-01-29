@@ -1,12 +1,12 @@
 @isTest
-private class TriggerOrderActivatedTest {
+private class Trigger_Order_AccountCA_Test {
     @isTest static void test_AccountCA_isCorrect() {
         Integer nbAccount = 10;
         Integer nbOrder = 105;
         Integer price = 10;
         Integer quantity = 5;
-        List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
-        List<Order> testOrders = TestDataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
+        List<Account> testAccounts = Test_DataFactory.createAccounts(nbAccount);
+        List<Order> testOrders = Test_DataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
         for (Order order : testOrders) {
             order.Status = 'Activated';
         }

@@ -1,4 +1,4 @@
-public without sharing class OrdersTeamController {
+public without sharing class Order_TeamSum_Controller {
     /**
      * calcul du montant total des commandes
      */

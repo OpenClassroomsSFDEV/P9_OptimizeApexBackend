@@ -1,13 +1,13 @@
 @isTest
-private class AccountCABatchTest {
+private class Account_CA_Batch_Test {
     @TestSetup
     static void makeData(){
         Integer nbAccount = 10;
         Integer nbOrder = 5;
         Integer price = 10;
         Integer quantity = 5;
-        List<Account> testAccounts = TestDataFactory.createAccounts(nbAccount);
-        List<Order> testOrders = TestDataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
+        List<Account> testAccounts = Test_DataFactory.createAccounts(nbAccount);
+        List<Order> testOrders = Test_DataFactory.createOrdersForAccounts(testAccounts, nbOrder, price, quantity);
         for (Order order : testOrders) {
             order.Status = 'Activated';
         }
@@ -19,7 +19,7 @@ private class AccountCABatchTest {
     @isTest static void test_batch_updatesCA() {
 
         Test.startTest();
-        AccountCABatch obj = new AccountCABatch();
+        Account_CA_Batch obj = new Account_CA_Batch();
         Id batchId = DataBase.executeBatch(obj); 
         Test.stopTest();
 

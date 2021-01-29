@@ -1,5 +1,5 @@
 @isTest
-public class TestDataFactory {
+public class Test_DataFactory {
     //##############################################################
     // générer une liste de comptes
     public static List<Account> createAccounts(Integer nbAccount) {
