@@ -1,4 +1,4 @@
-trigger Order_AccountCA on Order (after update) {
+trigger OrderAccountCA on Order (after update) {
   // récupération de la liste des comptes pour les commandes actives
   set<Id> accountIds = new set<Id>();
   for(Order order : trigger.new){
@@ -12,6 +12,6 @@ trigger Order_AccountCA on Order (after update) {
                                           FROM Account
                                           WHERE Id IN :accountIds
                                         ];
-    Account_CA_Service.calculateCA(accountsWithOrders);
+    AccountCAService.calculateCA(accountsWithOrders);
   }
 }

@@ -1,31 +1,32 @@
-# OpenClassrooms 
+# OpenClassrooms
+
 ## Project P9 - Optimize Apex Backend
+
 ## Degraded Project
 
-
 ### Naming Conventions :
-* **Class names:** UpperCamelCase :
 
-	* Apex Class
-		**`SObjectName_Function_Interface`** > `Account_CA_Batch`
-	
-	* Trigger Class
-		**`SObjectName_Function`** > `Order_NetAmount`
+- **Class names:** UpperCamelCase :
 
-	* Tests Class
-		**`ClassName_Test`** > `Account_CA_Batch_Test`
-		**`Trigger_ClassName_Test`** > `Trigger_Order_NetAmount_Test`
+  - Apex Class
+    **`SObjectNameFunctionInterface`** > `AccountCABatch`
 
+  - Trigger Class
+    **`SObjectNameFunction`** > `OrderNetAmount`
 
-* **Methods:** camelCase: `doSomething`
+  - Tests Class
+    **`ClassNameTest`** > `AccountCABatchTest`
+    **`TriggerClassNameTest`** > `TriggerOrderNetAmountTest`
 
-* **Test Methods:** camelCase & underscore: `test_what_when`
+- **Methods:** camelCase: `doSomething`
 
-* **SOQL**
+- **Test Methods:** camelCase: `testWhatWhen`
 
-	``` Apex
-	List<SObject> myList = [SELECT fields
-								FROM SObject
- 								WHERE condition
-							];
-   ```
+- **SOQL**
+
+  ```Apex
+  List<SObject> myList = [SELECT fields
+  							FROM SObject
+  							WHERE condition
+  						];
+  ```

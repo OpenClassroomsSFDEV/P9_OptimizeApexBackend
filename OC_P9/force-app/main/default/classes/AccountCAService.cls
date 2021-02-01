@@ -1,4 +1,4 @@
-global without sharing class Account_CA_Service {
+global without sharing class AccountCAService {
     /**
      * calcul et mise à jour du chiffre d'affaire de comptes
      */
