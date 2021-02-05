@@ -6,6 +6,7 @@ public without sharing class OrderTeamSumController {
         get{
             AggregateResult groupedResults = [SELECT SUM(TotalAmount) total
                                                 FROM Order
+                                                WHERE Status = 'Activated'
                                             ];
 			return (decimal)groupedResults.get('total');
         }
