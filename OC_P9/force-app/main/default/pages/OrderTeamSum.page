@@ -1,7 +1,10 @@
 <apex:page controller="OrderTeamSumController" >
-    <div>
-        <h1>
-            Sum of my team orders: <apex:outputText value="{!ordersSum}" />
-        </h1>
-    </div>
+    <head>
+        <apex:slds />
+    </head>
+    <body>
+        <div class="slds-m-top_small slds-text-heading_medium">
+            <apex:outputText value="{0, number, ###,##0}"><apex:param value="{!ordersSum}"/></apex:outputText> €
+        </div>
+    </body>
 </apex:page>
