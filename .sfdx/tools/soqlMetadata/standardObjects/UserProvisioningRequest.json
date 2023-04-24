@@ -1,0 +1,634 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de demande de provisionnement utilisateur",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID du propriétaire",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur",
+      "name": "SalesforceUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "SalesforceUser",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur externe",
+      "name": "ExternalUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nom de l'application",
+      "name": "AppName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "État",
+      "name": "State",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nouveau",
+          "validFor": null,
+          "value": "New"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Demandé",
+          "validFor": null,
+          "value": "Requested"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Terminé",
+          "validFor": null,
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échoué",
+          "validFor": null,
+          "value": "Failed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collection",
+          "validFor": null,
+          "value": "Collecting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collecté",
+          "validFor": null,
+          "value": "Collected"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Analyse",
+          "validFor": null,
+          "value": "Analyzing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Analysé",
+          "validFor": null,
+          "value": "Analyzed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engagement",
+          "validFor": null,
+          "value": "Committing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Retenté",
+          "validFor": null,
+          "value": "Retried"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Effectué manuellement",
+          "validFor": null,
+          "value": "Manually Completed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fonctionnement",
+      "name": "Operation",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créer",
+          "validFor": null,
+          "value": "Create"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lire",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mettre à jour",
+          "validFor": null,
+          "value": "Update"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Désactiver",
+          "validFor": null,
+          "value": "Deactivate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activer",
+          "validFor": null,
+          "value": "Activate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suspendre",
+          "validFor": null,
+          "value": "Freeze"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reconduire",
+          "validFor": null,
+          "value": "Unfreeze"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Réconcilier",
+          "validFor": null,
+          "value": "Reconcile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Liaison",
+          "validFor": null,
+          "value": "Linking"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure de provisionnement planifiée",
+      "name": "ScheduleDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'application connectée",
+      "name": "ConnectedAppId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ConnectedApplication"
+      ],
+      "relationshipName": "ConnectedApp",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de UserProvisioningConfig",
+      "name": "UserProvConfigId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserProvisioningConfig"
+      ],
+      "relationshipName": "UserProvConfig",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de compte de provisionnement utilisateur",
+      "name": "UserProvAccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserProvAccount"
+      ],
+      "relationshipName": "UserProvAccount",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Statut d'approbation",
+      "name": "ApprovalStatus",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Obligatoire",
+          "validFor": null,
+          "value": "Required"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Non obligatoire",
+          "validFor": null,
+          "value": "NotRequired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Approuvé",
+          "validFor": null,
+          "value": "Approved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Refusé",
+          "validFor": null,
+          "value": "Denied"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur",
+      "name": "ManagerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "Manager",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nombre de tentatives",
+      "name": "RetryCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de demande de provisionnement utilisateur",
+      "name": "ParentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserProvisioningRequest"
+      ],
+      "relationshipName": "Parent",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Demande de provisionnement utilisateur",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessInstance",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceHistory",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningLog",
+      "deprecatedAndHidden": false,
+      "field": "UserProvisioningRequestId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserProvisioningRequest",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserProvisioningRequestShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "UserProvisioningRequest",
+  "queryable": true
+}

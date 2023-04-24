@@ -1,0 +1,311 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de document de contenu",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ContentDocument ID",
+      "name": "ContentDocumentId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentDocument"
+      ],
+      "relationshipName": "ContentDocument",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Archivé par",
+          "validFor": null,
+          "value": "ArchivedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'archivage",
+          "validFor": null,
+          "value": "ArchivedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de suppression",
+          "validFor": null,
+          "value": "DeletedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Détails du fichier de ressource",
+          "validFor": null,
+          "value": "ContentAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document ajouté à la bibliothèque",
+          "validFor": null,
+          "value": "contentDocPublished"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document désinscrit de",
+          "validFor": null,
+          "value": "contentDocUnsubscribed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document inscrit à",
+          "validFor": null,
+          "value": "contentDocSubscribed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document présenté",
+          "validFor": null,
+          "value": "contentDocFeatured"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document rajouté à la bibliothèque",
+          "validFor": null,
+          "value": "contentDocRepublished"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document supprimé de bibliothèque",
+          "validFor": null,
+          "value": "contentDocUnpublished"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Est archivé",
+          "validFor": null,
+          "value": "IsArchived"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut de publication",
+          "validFor": null,
+          "value": "PublishStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Supprimé par",
+          "validFor": null,
+          "value": "DeletedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Titre",
+          "validFor": null,
+          "value": "Title"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique des documents de contenu",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContentDocumentHistory",
+  "queryable": true
+}

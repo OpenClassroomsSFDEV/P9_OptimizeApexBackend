@@ -1,0 +1,360 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique d'opportunité",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de l'opportunité",
+      "name": "OpportunityId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Opportunity"
+      ],
+      "relationshipName": "Opportunity",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catégorie de prévision",
+          "validFor": null,
+          "value": "ForecastCategoryName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé par conversion de piste",
+          "validFor": null,
+          "value": "opportunityCreatedFromLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Generator(s)",
+          "validFor": null,
+          "value": "CurrentGenerators__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de clôture",
+          "validFor": null,
+          "value": "CloseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Delivery/Installation Status",
+          "validFor": null,
+          "value": "DeliveryInstallationStatus__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Étape",
+          "validFor": null,
+          "value": "StageName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Étape suivante",
+          "validFor": null,
+          "value": "NextStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Main Competitor(s)",
+          "validFor": null,
+          "value": "MainCompetitors__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant",
+          "validFor": null,
+          "value": "Amount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom de l'opportunité",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Number",
+          "validFor": null,
+          "value": "OrderNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Origine de la piste",
+          "validFor": null,
+          "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Privé",
+          "validFor": null,
+          "value": "IsPrivate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Probabilité (%)",
+          "validFor": null,
+          "value": "Probability"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire de l'opportunité",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité",
+          "validFor": null,
+          "value": "TotalOpportunityQuantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source principale de campagne",
+          "validFor": null,
+          "value": "Campaign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tracking Number",
+          "validFor": null,
+          "value": "TrackingNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique du champ d'opportunité",
+  "childRelationships": [],
+  "custom": false,
+  "name": "OpportunityFieldHistory",
+  "queryable": true
+}

@@ -18,6 +18,8 @@ global class Case {
     global Id AccountId;
     global Asset Asset;
     global Id AssetId;
+    global SObject Source;
+    global Id SourceId;
     global Case Parent;
     global Id ParentId;
     global String SuppliedName;
@@ -50,6 +52,10 @@ global class Case {
     global String Comments;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global String EngineeringReqNumber__c;
+    global String SLAViolation__c;
+    global String Product__c;
+    global String PotentialLiability__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
@@ -58,6 +64,7 @@ global class Case {
     global List<CaseContactRole> CaseContactRoles;
     global List<CaseFeed> Feeds;
     global List<CaseHistory> Histories;
+    global List<CaseMilestone> CaseMilestones;
     global List<CaseShare> Shares;
     global List<CaseSolution> CaseSolutions;
     global List<CaseTeamMember> TeamMembers;
@@ -75,8 +82,12 @@ global class Case {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<ReturnOrder> ReturnOrders;
+    global List<ServiceAppointment> ServiceAppointments;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<VoiceCall> RelatedRecords;
+    global List<WorkOrder> WorkOrders;
     global List<CaseChangeEvent> Parent;
     global List<ContentDistribution> RelatedRecord;
     global List<ContentVersion> FirstPublishLocation;

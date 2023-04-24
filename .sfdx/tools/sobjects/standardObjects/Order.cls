@@ -72,6 +72,8 @@ global class Order {
     global Datetime SystemModstamp;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global Decimal ShipmentCost__c;
+    global Decimal NetAmount__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
@@ -92,8 +94,10 @@ global class Order {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
+    global List<ReturnOrder> ReturnOrders;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<WorkOrderLineItem> WorkOrderLineItems;
     global List<ContentVersion> FirstPublishLocation;
     global List<EventChangeEvent> What;
     global List<EventRelationChangeEvent> Relation;

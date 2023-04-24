@@ -1,0 +1,395 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de la requête",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de la requête",
+      "name": "CaseId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Case"
+      ],
+      "relationshipName": "Case",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actif",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrêté",
+          "validFor": null,
+          "value": "IsStopped"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clos.",
+          "validFor": null,
+          "value": "closed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat de service",
+          "validFor": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engineering Req Number",
+          "validFor": null,
+          "value": "EngineeringReqNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Escaladée",
+          "validFor": null,
+          "value": "IsEscalated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fermeture lors de la création",
+          "validFor": null,
+          "value": "IsClosedOnCreate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Heure de début du processus d'autorisation",
+          "validFor": null,
+          "value": "SlaStartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Heures d'ouverture",
+          "validFor": null,
+          "value": "BusinessHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de la requête",
+          "validFor": null,
+          "value": "Reason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom de l'autorisation",
+          "validFor": null,
+          "value": "Entitlement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du contact",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Objet",
+          "validFor": null,
+          "value": "Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Origine de la requête",
+          "validFor": null,
+          "value": "Origin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Potential Liability",
+          "validFor": null,
+          "value": "PotentialLiability__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priorité",
+          "validFor": null,
+          "value": "Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product",
+          "validFor": null,
+          "value": "Product__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produit",
+          "validFor": null,
+          "value": "Product"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Escalade)",
+          "validFor": null,
+          "value": "ownerEscalated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire de la requête",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Requête fusionnée",
+          "validFor": null,
+          "value": "caseMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Requête principale",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA Violation",
+          "validFor": null,
+          "value": "SLAViolation__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source de la requête",
+          "validFor": null,
+          "value": "Source"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique de la requête",
+  "childRelationships": [],
+  "custom": false,
+  "name": "CaseHistory",
+  "queryable": true
+}

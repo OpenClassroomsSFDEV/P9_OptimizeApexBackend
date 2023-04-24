@@ -1,0 +1,493 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de contrat",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID du contrat",
+      "name": "ContractId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contract"
+      ],
+      "relationshipName": "Contract",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activé par",
+          "validFor": null,
+          "value": "ActivatedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse de facturation",
+          "validFor": null,
+          "value": "BillingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Avis d'expiration du propriétaire",
+          "validFor": null,
+          "value": "OwnerExpirationNotice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Geocode Accuracy",
+          "validFor": null,
+          "value": "BillingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalogue de prix",
+          "validFor": null,
+          "value": "Pricebook2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal d'expédition",
+          "validFor": null,
+          "value": "ShippingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal de facturation",
+          "validFor": null,
+          "value": "BillingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Conditions spéciales",
+          "validFor": null,
+          "value": "SpecialTerms"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat activé.",
+          "validFor": null,
+          "value": "contractActivation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat brouillon.",
+          "validFor": null,
+          "value": "contractDraft"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat converti.",
+          "validFor": null,
+          "value": "contractConversion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat expiré.",
+          "validFor": null,
+          "value": "contractExpiration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrats en approbation.",
+          "validFor": null,
+          "value": "contractApproval"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contrat terminé.",
+          "validFor": null,
+          "value": "contractTermination"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'activation",
+          "validFor": null,
+          "value": "ActivatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de début du contrat",
+          "validFor": null,
+          "value": "StartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de fin du contrat",
+          "validFor": null,
+          "value": "EndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de signature de la société",
+          "validFor": null,
+          "value": "CompanySignedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de signature du client",
+          "validFor": null,
+          "value": "CustomerSignedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Durée du contrat (mois)",
+          "validFor": null,
+          "value": "ContractTerm"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de l'adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de l'adresse de facturation",
+          "validFor": null,
+          "value": "BillingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de l'adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de l'adresse de facturation",
+          "validFor": null,
+          "value": "BillingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du contrat",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays d'expédition",
+          "validFor": null,
+          "value": "ShippingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays de facturation",
+          "validFor": null,
+          "value": "BillingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire du contrat",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province d'expédition",
+          "validFor": null,
+          "value": "ShippingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province de facturation",
+          "validFor": null,
+          "value": "BillingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue d'expédition",
+          "validFor": null,
+          "value": "ShippingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue de facturation",
+          "validFor": null,
+          "value": "BillingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipping Geocode Accuracy",
+          "validFor": null,
+          "value": "ShippingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Signataire (client)",
+          "validFor": null,
+          "value": "CustomerSigned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Signé par (société)",
+          "validFor": null,
+          "value": "CompanySigned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Titre du signataire",
+          "validFor": null,
+          "value": "CustomerSignedTitle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville d'expédition",
+          "validFor": null,
+          "value": "ShippingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville de facturation",
+          "validFor": null,
+          "value": "BillingCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique du contrat",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContractHistory",
+  "queryable": true
+}

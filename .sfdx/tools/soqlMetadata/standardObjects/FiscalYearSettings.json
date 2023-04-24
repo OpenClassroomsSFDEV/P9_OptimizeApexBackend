@@ -1,0 +1,423 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID des paramètres de l'exercice fiscal",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de période",
+      "name": "PeriodId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Period"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Date de début",
+      "name": "StartDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Date de fin",
+      "name": "EndDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nom",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Est un exercice standard",
+      "name": "IsStandardYear",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type d'année",
+      "name": "YearType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Standard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Custom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Placeholder"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Schéma du nom du trimestre",
+      "name": "QuarterLabelScheme",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numérotation par année",
+          "validFor": null,
+          "value": "NumberByYear"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Noms de trimestre personnalisés",
+          "validFor": null,
+          "value": "Custom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Schéma du nom de la période",
+      "name": "PeriodLabelScheme",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numérotation par année",
+          "validFor": null,
+          "value": "NumberByYear"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numérotation par trimestre",
+          "validFor": null,
+          "value": "NumberByQuarter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Noms de mois standard",
+          "validFor": null,
+          "value": "StandardMonths"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Noms de période personnalisés",
+          "validFor": null,
+          "value": "Custom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Schéma du nom de la semaine",
+      "name": "WeekLabelScheme",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Année",
+          "validFor": null,
+          "value": "NumberByYear"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trimestre",
+          "validFor": null,
+          "value": "NumberByQuarter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Période",
+          "validFor": null,
+          "value": "NumberByPeriod"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Quarter",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Préfixe du trimestre",
+      "name": "QuarterPrefix",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Quarter",
+          "validFor": null,
+          "value": "Quarter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FQ",
+          "validFor": null,
+          "value": "FQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Q",
+          "validFor": null,
+          "value": "Q"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Trimester",
+          "validFor": null,
+          "value": "Trimester"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Period",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Préfixe de la période",
+      "name": "PeriodPrefix",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Period",
+          "validFor": null,
+          "value": "Period"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FP",
+          "validFor": null,
+          "value": "FP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "P",
+          "validFor": null,
+          "value": "P"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Month",
+          "validFor": null,
+          "value": "Month"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Jour de début de la semaine",
+      "name": "WeekStartDay",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Configuration de l'exercice fiscal",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "Period",
+      "deprecatedAndHidden": false,
+      "field": "FiscalYearSettingsId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Periods",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "FiscalYearSettings",
+  "queryable": true
+}

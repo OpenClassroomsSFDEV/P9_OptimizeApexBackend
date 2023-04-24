@@ -1,0 +1,331 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de l'historique des opportunités",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de l'opportunité",
+      "name": "OpportunityId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Opportunity"
+      ],
+      "relationshipName": "Opportunity",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nom de l'étape",
+      "name": "StageName",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prospecting",
+          "validFor": null,
+          "value": "Prospecting"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Qualification",
+          "validFor": null,
+          "value": "Qualification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Needs Analysis",
+          "validFor": null,
+          "value": "Needs Analysis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Value Proposition",
+          "validFor": null,
+          "value": "Value Proposition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Id. Decision Makers",
+          "validFor": null,
+          "value": "Id. Decision Makers"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Perception Analysis",
+          "validFor": null,
+          "value": "Perception Analysis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Proposal/Price Quote",
+          "validFor": null,
+          "value": "Proposal/Price Quote"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Negotiation/Review",
+          "validFor": null,
+          "value": "Negotiation/Review"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed Won",
+          "validFor": null,
+          "value": "Closed Won"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed Lost",
+          "validFor": null,
+          "value": "Closed Lost"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Montant",
+      "name": "Amount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Chiffre d'affaires prévu",
+      "name": "ExpectedRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Date de clôture",
+      "name": "CloseDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Probabilité",
+      "name": "Probability",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "percent"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "À la catégorie prévisionnelle",
+      "name": "ForecastCategory",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Omise",
+          "validFor": null,
+          "value": "Omitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "En-cours",
+          "validFor": null,
+          "value": "Pipeline"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maximum",
+          "validFor": null,
+          "value": "BestCase"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Plus probable",
+          "validFor": null,
+          "value": "MostLikely"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Validation",
+          "validFor": null,
+          "value": "Forecast"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fermée",
+          "validFor": null,
+          "value": "Closed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "label": "Historique d'opportunité",
+  "childRelationships": [],
+  "custom": false,
+  "name": "OpportunityHistory",
+  "queryable": true
+}

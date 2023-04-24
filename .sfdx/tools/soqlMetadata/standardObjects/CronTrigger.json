@@ -1,0 +1,949 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de tâche prévue",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de la tâche",
+      "name": "CronJobDetailId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CronJobDetail"
+      ],
+      "relationshipName": "CronJobDetail",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure de la prochaine exécution",
+      "name": "NextFireTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure de l'exécution précédente",
+      "name": "PreviousFireTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "État de la tâche",
+      "name": "State",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure de début",
+      "name": "StartTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure de fin",
+      "name": "EndTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Expression Cron",
+      "name": "CronExpression",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de fuseau horaire Java",
+      "name": "TimeZoneSidKey",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+14:00) heure des îles de la Ligne (Pacific/Kiritimati)",
+          "validFor": null,
+          "value": "Pacific/Kiritimati"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+13:00) heure des îles Phoenix (Pacific/Enderbury)",
+          "validFor": null,
+          "value": "Pacific/Enderbury"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+13:00) heure normale des Tonga (Pacific/Tongatapu)",
+          "validFor": null,
+          "value": "Pacific/Tongatapu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:45) heure normale des îles Chatham (Pacific/Chatham)",
+          "validFor": null,
+          "value": "Pacific/Chatham"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale de Petropavlovsk-Kamchatski (Asia/Kamchatka)",
+          "validFor": null,
+          "value": "Asia/Kamchatka"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale de la Nouvelle-Zélande (Pacific/Auckland)",
+          "validFor": null,
+          "value": "Pacific/Auckland"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale des îles Fidji (Pacific/Fiji)",
+          "validFor": null,
+          "value": "Pacific/Fiji"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) heure des îles Salomon (Pacific/Guadalcanal)",
+          "validFor": null,
+          "value": "Pacific/Guadalcanal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) heure normale de l’île Norfolk (Pacific/Norfolk)",
+          "validFor": null,
+          "value": "Pacific/Norfolk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:30) heure normale de Lord Howe (Australia/Lord_Howe)",
+          "validFor": null,
+          "value": "Australia/Lord_Howe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:00) heure normale de l’Est de l’Australie (Australia/Brisbane)",
+          "validFor": null,
+          "value": "Australia/Brisbane"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:00) heure normale de l’Est de l’Australie (Australia/Sydney)",
+          "validFor": null,
+          "value": "Australia/Sydney"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:30) heure normale du centre de l’Australie (Australia/Adelaide)",
+          "validFor": null,
+          "value": "Australia/Adelaide"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:30) heure normale du centre de l’Australie (Australia/Darwin)",
+          "validFor": null,
+          "value": "Australia/Darwin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:00) heure normale de la Corée (Asia/Seoul)",
+          "validFor": null,
+          "value": "Asia/Seoul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:00) heure normale du Japon (Asia/Tokyo)",
+          "validFor": null,
+          "value": "Asia/Tokyo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de Hong Kong (Asia/Hong_Kong)",
+          "validFor": null,
+          "value": "Asia/Hong_Kong"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure de la Malaisie (Asia/Kuala_Lumpur)",
+          "validFor": null,
+          "value": "Asia/Kuala_Lumpur"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale des Philippines (Asia/Manila)",
+          "validFor": null,
+          "value": "Asia/Manila"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de la Chine (Asia/Shanghai)",
+          "validFor": null,
+          "value": "Asia/Shanghai"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure de Singapour (Asia/Singapore)",
+          "validFor": null,
+          "value": "Asia/Singapore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de Taipei (Asia/Taipei)",
+          "validFor": null,
+          "value": "Asia/Taipei"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de l’Ouest de l’Australie (Australia/Perth)",
+          "validFor": null,
+          "value": "Australia/Perth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure d’Indochine (Asia/Bangkok)",
+          "validFor": null,
+          "value": "Asia/Bangkok"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure d’Indochine (Asia/Ho_Chi_Minh)",
+          "validFor": null,
+          "value": "Asia/Ho_Chi_Minh"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure de l’Ouest indonésien (Asia/Jakarta)",
+          "validFor": null,
+          "value": "Asia/Jakarta"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+06:30) heure du Myanmar (Asia/Rangoon)",
+          "validFor": null,
+          "value": "Asia/Rangoon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+06:00) heure normale du Bangladesh (Asia/Dhaka)",
+          "validFor": null,
+          "value": "Asia/Dhaka"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:45) heure du Népal (Asia/Kathmandu)",
+          "validFor": null,
+          "value": "Asia/Kathmandu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:30) heure de l’Inde (Asia/Colombo)",
+          "validFor": null,
+          "value": "Asia/Colombo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:30) heure de l’Inde (Asia/Kolkata)",
+          "validFor": null,
+          "value": "Asia/Kolkata"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale du Pakistan (Asia/Karachi)",
+          "validFor": null,
+          "value": "Asia/Karachi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale de l’Ouzbékistan (Asia/Tashkent)",
+          "validFor": null,
+          "value": "Asia/Tashkent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale d’Ekaterinbourg (Asia/Yekaterinburg)",
+          "validFor": null,
+          "value": "Asia/Yekaterinburg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:30) heure de l’Afghanistan (Asia/Kabul)",
+          "validFor": null,
+          "value": "Asia/Kabul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de l’Azerbaïdjan (Asia/Baku)",
+          "validFor": null,
+          "value": "Asia/Baku"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure du Golfe (Asia/Dubai)",
+          "validFor": null,
+          "value": "Asia/Dubai"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de la Géorgie (Asia/Tbilisi)",
+          "validFor": null,
+          "value": "Asia/Tbilisi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de l’Arménie (Asia/Yerevan)",
+          "validFor": null,
+          "value": "Asia/Yerevan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:30) heure normale d’Iran (Asia/Tehran)",
+          "validFor": null,
+          "value": "Asia/Tehran"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale d’Afrique de l’Est (Africa/Nairobi)",
+          "validFor": null,
+          "value": "Africa/Nairobi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Baghdad)",
+          "validFor": null,
+          "value": "Asia/Baghdad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Asia/Beirut)",
+          "validFor": null,
+          "value": "Asia/Beirut"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Israël (Asia/Jerusalem)",
+          "validFor": null,
+          "value": "Asia/Jerusalem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Kuwait)",
+          "validFor": null,
+          "value": "Asia/Kuwait"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Riyadh)",
+          "validFor": null,
+          "value": "Asia/Riyadh"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Athens)",
+          "validFor": null,
+          "value": "Europe/Athens"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Bucharest)",
+          "validFor": null,
+          "value": "Europe/Bucharest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Helsinki)",
+          "validFor": null,
+          "value": "Europe/Helsinki"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale d’Europe de l’Est (Europe/Istanbul)",
+          "validFor": null,
+          "value": "Europe/Istanbul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de Moscou (Europe/Minsk)",
+          "validFor": null,
+          "value": "Europe/Minsk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de Moscou (Europe/Moscow)",
+          "validFor": null,
+          "value": "Europe/Moscow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure normale d’Europe de l’Est (Africa/Cairo)",
+          "validFor": null,
+          "value": "Africa/Cairo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure normale d’Afrique méridionale (Africa/Johannesburg)",
+          "validFor": null,
+          "value": "Africa/Johannesburg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Amsterdam)",
+          "validFor": null,
+          "value": "Europe/Amsterdam"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Berlin)",
+          "validFor": null,
+          "value": "Europe/Berlin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Brussels)",
+          "validFor": null,
+          "value": "Europe/Brussels"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Paris)",
+          "validFor": null,
+          "value": "Europe/Paris"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Prague)",
+          "validFor": null,
+          "value": "Europe/Prague"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Rome)",
+          "validFor": null,
+          "value": "Europe/Rome"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure normale d’Europe centrale (Africa/Algiers)",
+          "validFor": null,
+          "value": "Africa/Algiers"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été irlandaise (Europe/Dublin)",
+          "validFor": null,
+          "value": "Europe/Dublin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été d’Europe de l’Ouest (Europe/Lisbon)",
+          "validFor": null,
+          "value": "Europe/Lisbon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été britannique (Europe/London)",
+          "validFor": null,
+          "value": "Europe/London"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure normale d’Europe de l’Ouest (Africa/Casablanca)",
+          "validFor": null,
+          "value": "Africa/Casablanca"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure d’été de l’Est du Groenland (America/Scoresbysund)",
+          "validFor": null,
+          "value": "America/Scoresbysund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure d’été des Açores (Atlantic/Azores)",
+          "validFor": null,
+          "value": "Atlantic/Azores"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure moyenne de Greenwich (GMT)",
+          "validFor": null,
+          "value": "GMT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-01:00) heure normale du Cap-Vert (Atlantic/Cape_Verde)",
+          "validFor": null,
+          "value": "Atlantic/Cape_Verde"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-02:00) heure de Géorgie du Sud (Atlantic/South_Georgia)",
+          "validFor": null,
+          "value": "Atlantic/South_Georgia"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-02:30) heure d’été de Terre-Neuve (America/St_Johns)",
+          "validFor": null,
+          "value": "America/St_Johns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure normale d’Argentine (America/Argentina/Buenos_Aires)",
+          "validFor": null,
+          "value": "America/Argentina/Buenos_Aires"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure d’été de l’Atlantique (America/Halifax)",
+          "validFor": null,
+          "value": "America/Halifax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure normale de Brasilia (America/Sao_Paulo)",
+          "validFor": null,
+          "value": "America/Sao_Paulo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure d’été de l’Atlantique (Atlantic/Bermuda)",
+          "validFor": null,
+          "value": "Atlantic/Bermuda"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure du Venezuela (America/Caracas)",
+          "validFor": null,
+          "value": "America/Caracas"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure d’été de l’Est (America/Indiana/Indianapolis)",
+          "validFor": null,
+          "value": "America/Indiana/Indianapolis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure d’été de l’Est (America/New_York)",
+          "validFor": null,
+          "value": "America/New_York"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure normale de l’Atlantique (America/Puerto_Rico)",
+          "validFor": null,
+          "value": "America/Puerto_Rico"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure normale du Chili (America/Santiago)",
+          "validFor": null,
+          "value": "America/Santiago"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale de Colombie (America/Bogota)",
+          "validFor": null,
+          "value": "America/Bogota"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure d’été du Centre (America/Chicago)",
+          "validFor": null,
+          "value": "America/Chicago"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale du Pérou (America/Lima)",
+          "validFor": null,
+          "value": "America/Lima"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale de l’Est nord-américain (America/Panama)",
+          "validFor": null,
+          "value": "America/Panama"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure d’été des Rocheuses (America/Denver)",
+          "validFor": null,
+          "value": "America/Denver"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure normale du centre nord-américain (America/El_Salvador)",
+          "validFor": null,
+          "value": "America/El_Salvador"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure normale du centre nord-américain (America/Mexico_City)",
+          "validFor": null,
+          "value": "America/Mexico_City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure d’été du Pacifique (America/Los_Angeles)",
+          "validFor": null,
+          "value": "America/Los_Angeles"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure normale du Pacifique mexicain (America/Mazatlan)",
+          "validFor": null,
+          "value": "America/Mazatlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure normale des Rocheuses (America/Phoenix)",
+          "validFor": null,
+          "value": "America/Phoenix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure d’été du Pacifique (America/Tijuana)",
+          "validFor": null,
+          "value": "America/Tijuana"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-08:00) heure d’été de l’Alaska (America/Anchorage)",
+          "validFor": null,
+          "value": "America/Anchorage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-08:00) heure des îles Pitcairn (Pacific/Pitcairn)",
+          "validFor": null,
+          "value": "Pacific/Pitcairn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:00) heure d’été d’Hawaii - Aléoutiennes (America/Adak)",
+          "validFor": null,
+          "value": "America/Adak"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:00) heure des îles Gambier (Pacific/Gambier)",
+          "validFor": null,
+          "value": "Pacific/Gambier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:30) heure des îles Marquises (Pacific/Marquesas)",
+          "validFor": null,
+          "value": "Pacific/Marquesas"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-10:00) heure normale d’Hawaii - Aléoutiennes (Pacific/Honolulu)",
+          "validFor": null,
+          "value": "Pacific/Honolulu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-11:00) heure de Nioué (Pacific/Niue)",
+          "validFor": null,
+          "value": "Pacific/Niue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-11:00) heure normale des Samoa (Pacific/Pago_Pago)",
+          "validFor": null,
+          "value": "Pacific/Pago_Pago"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nombre de déclenchements de tâches",
+      "name": "TimesTriggered",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Tâches prévues",
+  "childRelationships": [],
+  "custom": false,
+  "name": "CronTrigger",
+  "queryable": true
+}

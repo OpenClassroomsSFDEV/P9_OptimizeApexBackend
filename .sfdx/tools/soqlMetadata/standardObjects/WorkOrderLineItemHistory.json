@@ -1,0 +1,430 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'Historique d'élément de ligne de commande de retour",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'élément de ligne de commande de retour",
+      "name": "WorkOrderLineItemId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "WorkOrderLineItem"
+      ],
+      "relationshipName": "WorkOrderLineItem",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actif",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catégorie de statut",
+          "validFor": null,
+          "value": "StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal",
+          "validFor": null,
+          "value": "PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de début",
+          "validFor": null,
+          "value": "StartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de fin",
+          "validFor": null,
+          "value": "EndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Département/province",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Durée",
+          "validFor": null,
+          "value": "Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Durée en minutes",
+          "validFor": null,
+          "value": "DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Élément d'ordre d'exécution parent",
+          "validFor": null,
+          "value": "ParentWorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Élément de ligne d'ordre d'exécution racine",
+          "validFor": null,
+          "value": "RootWorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emplacement",
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Est fermé",
+          "validFor": null,
+          "value": "IsClosed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Objet",
+          "validFor": null,
+          "value": "Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordre d'exécution",
+          "validFor": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays",
+          "validFor": null,
+          "value": "Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Précision du géocodage",
+          "validFor": null,
+          "value": "GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Priorité",
+          "validFor": null,
+          "value": "Priority"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prix unitaire",
+          "validFor": null,
+          "value": "UnitPrice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produit",
+          "validFor": null,
+          "value": "PricebookEntry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produit",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité",
+          "validFor": null,
+          "value": "Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Remise",
+          "validFor": null,
+          "value": "Discount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territoire de service",
+          "validFor": null,
+          "value": "ServiceTerritory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de durée",
+          "validFor": null,
+          "value": "DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de travail",
+          "validFor": null,
+          "value": "WorkType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville",
+          "validFor": null,
+          "value": "City"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique d'élément de ligne de commande de retour",
+  "childRelationships": [],
+  "custom": false,
+  "name": "WorkOrderLineItemHistory",
+  "queryable": true
+}

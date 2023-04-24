@@ -1,0 +1,698 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de vérification de l'identité",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tentative de vérification",
+      "name": "EventGroup",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Heure",
+      "name": "VerificationTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Méthode",
+      "name": "VerificationMethod",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mot de passe unique",
+          "validFor": null,
+          "value": "Totp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SMS",
+          "validFor": null,
+          "value": "Sms"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "E-mail",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salesforce Authenticator",
+          "validFor": null,
+          "value": "SalesforceAuthenticator"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code temporaire",
+          "validFor": null,
+          "value": "TempCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clé de sécurité U2F",
+          "validFor": null,
+          "value": "U2F"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lightning Login",
+          "validFor": null,
+          "value": "LL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lightning Login",
+          "validFor": null,
+          "value": "EnableLL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mot de passe",
+          "validFor": null,
+          "value": "Password"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authentificateur intégré",
+          "validFor": null,
+          "value": "BuiltInAuthenticator"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clé de sécurité",
+          "validFor": null,
+          "value": "WebAuthnRoamingAuthenticator"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Activité de l'utilisateur",
+      "name": "Activity",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrer pour vérification",
+          "validFor": null,
+          "value": "Registration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exécuter une opération qui nécessite une vérification supplémentaire",
+          "validFor": null,
+          "value": "ExtraVerification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Se connecter à Salesforce",
+          "validFor": null,
+          "value": "Login"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accéder aux rapports",
+          "validFor": null,
+          "value": "AccessReports"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exporter et imprimer des rapports",
+          "validFor": null,
+          "value": "ExportPrintReports"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accéder à une application connectée",
+          "validFor": null,
+          "value": "ConnectedApp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activité définie par Apex",
+          "validFor": null,
+          "value": "Apex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Générer un code de vérification temporaire",
+          "validFor": null,
+          "value": "TempCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "S’inscrire à Lightning Login",
+          "validFor": null,
+          "value": "EnableLL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter un générateur de mot de passe unique",
+          "validFor": null,
+          "value": "ConnectTotp"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter Salesforce Authenticator",
+          "validFor": null,
+          "value": "ConnectToopher"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter une clé de sécurité U2F",
+          "validFor": null,
+          "value": "ConnectU2F"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Changer votre adresse e-mail",
+          "validFor": null,
+          "value": "ChangeEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accéder à la vue de liste",
+          "validFor": null,
+          "value": "ListView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter un numéro de téléphone mobile",
+          "validFor": null,
+          "value": "ConnectSms"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter un authentificateur intégré",
+          "validFor": null,
+          "value": "ConnectWebAuth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connecter une clé de sécurité (U2F ou WebAuthn)",
+          "validFor": null,
+          "value": "ConnectWebAuthRoaming"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Statut",
+      "name": "Status",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Initié",
+          "validFor": null,
+          "value": "Initiated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilisateur interrogé, en attente d'une réponse",
+          "validFor": null,
+          "value": "InProgress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Réussi",
+          "validFor": null,
+          "value": "Succeeded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accès refusé",
+          "validFor": null,
+          "value": "Denied"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : Erreur irrécupérable",
+          "validFor": null,
+          "value": "RecoverableError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : Erreur générale",
+          "validFor": null,
+          "value": "FailedGeneralError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : Code de vérification non valide",
+          "validFor": null,
+          "value": "FailedInvalidCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : Nombre de tentatives excessif",
+          "validFor": null,
+          "value": "FailedTooManyAttempts"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Réussite : Réponse automatisée",
+          "validFor": null,
+          "value": "AutomatedSuccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accès refusé : Marqué par l'utilisateur",
+          "validFor": null,
+          "value": "ReportedDenied"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : mot de passe verrouillé",
+          "validFor": null,
+          "value": "FailedPasswordLockout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échec : mot de passe non valide",
+          "validFor": null,
+          "value": "FailedInvalidPassword"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique des connexions",
+      "name": "LoginHistoryId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginHistory"
+      ],
+      "relationshipName": "LoginHistory",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "IP source",
+      "name": "SourceIp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de données de géolocalisation de la connexion",
+      "name": "LoginGeoId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginGeo"
+      ],
+      "relationshipName": "LoginGeo",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Message d'activité",
+      "name": "Remarks",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'application connectée",
+      "name": "ResourceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ConnectedApplication"
+      ],
+      "relationshipName": "Resource",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Déclenchée par",
+      "name": "Policy",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Session hautement sécurisée requise",
+          "validFor": null,
+          "value": "HighAssurance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Accéder à une page protégée",
+          "validFor": null,
+          "value": "PageAccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Stratégie de niveau de session du profil",
+          "validFor": null,
+          "value": "ProfilePolicy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authentification multifacteur requise",
+          "validFor": null,
+          "value": "TwoFactorAuthentication"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activation",
+          "validFor": null,
+          "value": "DeviceActivation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vérification supplémentaire",
+          "validFor": null,
+          "value": "ExtraVerification"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lightning Login",
+          "validFor": null,
+          "value": "LightningLogin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "S’inscrire à Lightning Login",
+          "validFor": null,
+          "value": "EnableLightningLogin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Méthode Apex",
+          "validFor": null,
+          "value": "CustomApex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connexion sans mot de passe",
+          "validFor": null,
+          "value": "PasswordlessLogin"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Historique de vérification de l'identité",
+  "childRelationships": [],
+  "custom": false,
+  "name": "VerificationHistory",
+  "queryable": true
+}

@@ -1,0 +1,619 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de compte",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID du compte",
+      "name": "AccountId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": "Account",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active",
+          "validFor": null,
+          "value": "Active__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse de facturation",
+          "validFor": null,
+          "value": "BillingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Année de création",
+          "validFor": null,
+          "value": "YearStarted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Geocode Accuracy",
+          "validFor": null,
+          "value": "BillingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiffre d'affaire",
+          "validFor": null,
+          "value": "Chiffre_d_affaire__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiffre d'affaires annuel",
+          "validFor": null,
+          "value": "AnnualRevenue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clé Data.com",
+          "validFor": null,
+          "value": "Jigsaw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code NAICS",
+          "validFor": null,
+          "value": "NaicsCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal d'expédition",
+          "validFor": null,
+          "value": "ShippingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal de facturation",
+          "validFor": null,
+          "value": "BillingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code SIC",
+          "validFor": null,
+          "value": "Sic"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compte fusionné",
+          "validFor": null,
+          "value": "accountMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compte principal",
+          "validFor": null,
+          "value": "Parent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé par conversion de piste",
+          "validFor": null,
+          "value": "accountCreatedFromLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer Priority",
+          "validFor": null,
+          "value": "CustomerPriority__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description NAICS",
+          "validFor": null,
+          "value": "NaicsDesc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description SIC",
+          "validFor": null,
+          "value": "SicDesc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Employés",
+          "validFor": null,
+          "value": "NumberOfEmployees"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Évaluation",
+          "validFor": null,
+          "value": "Rating"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Forme juridique",
+          "validFor": null,
+          "value": "Ownership"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Heure ouvrable",
+          "validFor": null,
+          "value": "OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de l'adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de l'adresse de facturation",
+          "validFor": null,
+          "value": "BillingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de l'adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de l'adresse de facturation",
+          "validFor": null,
+          "value": "BillingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total",
+          "validFor": null,
+          "value": "TotalAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "TextName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Number of Locations",
+          "validFor": null,
+          "value": "NumberofLocations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro du compte",
+          "validFor": null,
+          "value": "AccountNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro D-U-N-S",
+          "validFor": null,
+          "value": "DunsNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays d'expédition",
+          "validFor": null,
+          "value": "ShippingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays de facturation",
+          "validFor": null,
+          "value": "BillingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piste convertie en compte",
+          "validFor": null,
+          "value": "accountUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piste convertie en compte personnel",
+          "validFor": null,
+          "value": "personAccountUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire du compte",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province d'expédition",
+          "validFor": null,
+          "value": "ShippingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province de facturation",
+          "validFor": null,
+          "value": "BillingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue d'expédition",
+          "validFor": null,
+          "value": "ShippingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue de facturation",
+          "validFor": null,
+          "value": "BillingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Secteur d'activité",
+          "validFor": null,
+          "value": "Industry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipping Geocode Accuracy",
+          "validFor": null,
+          "value": "ShippingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site du compte",
+          "validFor": null,
+          "value": "Site"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site Web",
+          "validFor": null,
+          "value": "Website"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA",
+          "validFor": null,
+          "value": "SLA__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA Expiration Date",
+          "validFor": null,
+          "value": "SLAExpirationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA Serial Number",
+          "validFor": null,
+          "value": "SLASerialNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Société D&B",
+          "validFor": null,
+          "value": "DandbCompany"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source du compte",
+          "validFor": null,
+          "value": "AccountSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut de mise à jour",
+          "validFor": null,
+          "value": "CleanStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Symbole",
+          "validFor": null,
+          "value": "TickerSymbol"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Télécopie",
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tradestyle",
+          "validFor": null,
+          "value": "Tradestyle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Upsell Opportunity",
+          "validFor": null,
+          "value": "UpsellOpportunity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville d'expédition",
+          "validFor": null,
+          "value": "ShippingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville de facturation",
+          "validFor": null,
+          "value": "BillingCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique des comptes",
+  "childRelationships": [],
+  "custom": false,
+  "name": "AccountHistory",
+  "queryable": true
+}
