@@ -12,27 +12,27 @@ global class UpdateAccountsTurnOver implements Database.Batchable<sObject>{
         List<Account> acctsToUpdate = new List<Account>();
         List<Order> listOrders =  [SELECT Id, TotalAmount, AccountId FROM Order where status ='Ordered' AND AccountId IN:scope];
        
-		for(Account acct:scope){
+	for(Account acct:scope){
 
 // Réinitialiser le Chiffre d'affaire avant la mise à jour
-			acct.Chiffre_d_affaire__c = 0;
+		acct.Chiffre_d_affaire__c = 0;
 
 // Parcourir la liste des commandes associées au compte actuel et calculer le Chiffre d'affaire total
-           for(order ord:listOrders){
-               if(ord.AccountId ==acct.Id){
-                   acct.Chiffre_d_affaire__c += ord.TotalAmount;
-               }
-           }
+    for(order ord:listOrders){
+        if (ord.AccountId == acct.Id){
+            acct.Chiffre_d_affaire__c += ord.TotalAmount;
+        }
+    }
 
 // Mettre à jour le compte dans la base de données
-           acctsToUpdate.add(acct);
-       }
+        acctsToUpdate.add(acct);
+    }
        if(acctsToUpdate.isEmpty()){
         system.debug('No Account has any orders Ordered');
-    } else {
+        } else {
         update acctsToUpdate;
         system.debug('Batch executed');
-    }
+        }
     }       
    global void finish(Database.BatchableContext info){
 
