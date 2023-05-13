@@ -1,0 +1,535 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de piste",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de piste",
+      "name": "LeadId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Lead"
+      ],
+      "relationshipName": "Lead",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse e-mail",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chiffre d'affaires annuel",
+          "validFor": null,
+          "value": "AnnualRevenue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Civilité",
+          "validFor": null,
+          "value": "Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clé Data.com",
+          "validFor": null,
+          "value": "Jigsaw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal",
+          "validFor": null,
+          "value": "PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cote",
+          "validFor": null,
+          "value": "Rating"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Generator(s)",
+          "validFor": null,
+          "value": "CurrentGenerators__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de renvoi d'e-mail",
+          "validFor": null,
+          "value": "EmailBouncedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Désinscription d'adresse e-mail",
+          "validFor": null,
+          "value": "HasOptedOutOfEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Désinscription de télécopie",
+          "validFor": null,
+          "value": "HasOptedOutOfFax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fonction",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identité sexuelle",
+          "validFor": null,
+          "value": "GenderIdentity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de renvoi d'e-mail",
+          "validFor": null,
+          "value": "EmailBouncedReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas appeler",
+          "validFor": null,
+          "value": "DoNotCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nombre d'employés",
+          "validFor": null,
+          "value": "NumberOfEmployees"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom complet",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Non lu par le propriétaire",
+          "validFor": null,
+          "value": "IsUnreadByOwner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Number of Locations",
+          "validFor": null,
+          "value": "NumberofLocations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro D-U-N-S de la société",
+          "validFor": null,
+          "value": "CompanyDunsNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Origine de la piste",
+          "validFor": null,
+          "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays",
+          "validFor": null,
+          "value": "Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piste convertie.",
+          "validFor": null,
+          "value": "leadConverted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piste fusionnée",
+          "validFor": null,
+          "value": "leadMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Précision du géocodage",
+          "validFor": null,
+          "value": "GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prénom",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primary",
+          "validFor": null,
+          "value": "Primary__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product Interest",
+          "validFor": null,
+          "value": "ProductInterest__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pronoms",
+          "validFor": null,
+          "value": "Pronouns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire de la piste",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Secteur d'activité",
+          "validFor": null,
+          "value": "Industry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SIC Code",
+          "validFor": null,
+          "value": "SICCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site Web",
+          "validFor": null,
+          "value": "Website"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Société",
+          "validFor": null,
+          "value": "Company"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Société D&B",
+          "validFor": null,
+          "value": "DandbCompany"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut de la piste",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut de mise à jour",
+          "validFor": null,
+          "value": "CleanStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Télécopie",
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone mobile",
+          "validFor": null,
+          "value": "MobilePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville",
+          "validFor": null,
+          "value": "City"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique des pistes",
+  "childRelationships": [],
+  "custom": false,
+  "name": "LeadHistory",
+  "queryable": true
+}

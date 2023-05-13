@@ -1,0 +1,479 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique des ordres de retour",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'ordre de retour",
+      "name": "ReturnOrderId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ReturnOrder"
+      ],
+      "relationshipName": "ReturnOrder",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse",
+          "validFor": null,
+          "value": "ShipFromStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse d'expédition",
+          "validFor": null,
+          "value": "ShipFromAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustement des frais",
+          "validFor": null,
+          "value": "TotalFeeAdjustAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustements d'expédition",
+          "validFor": null,
+          "value": "TotalDeliveryAdjustAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustements des produits",
+          "validFor": null,
+          "value": "TotalProductAdjustAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catégorie de statut",
+          "validFor": null,
+          "value": "StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal",
+          "validFor": null,
+          "value": "ShipFromPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact",
+          "validFor": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'arrivée estimée",
+          "validFor": null,
+          "value": "ExpectedArrivalDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'expiration",
+          "validFor": null,
+          "value": "ExpirationDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emplacement de destination",
+          "validFor": null,
+          "value": "DestinationLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emplacement source",
+          "validFor": null,
+          "value": "SourceLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ShipFromLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LineItemAutonumberMaster",
+          "validFor": null,
+          "value": "LineItemAutonumberMaster"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ShipFromLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordre",
+          "validFor": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays",
+          "validFor": null,
+          "value": "ShipFromCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Précision du géocodage",
+          "validFor": null,
+          "value": "ShipFromGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province",
+          "validFor": null,
+          "value": "ShipFromState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Renvoyé par",
+          "validFor": null,
+          "value": "ReturnedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Requête",
+          "validFor": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sous-total d'expédition",
+          "validFor": null,
+          "value": "TotalDeliveryAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sous-total des frais",
+          "validFor": null,
+          "value": "TotalFeeAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sous-total des produits",
+          "validFor": null,
+          "value": "TotalProductAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe",
+          "validFor": null,
+          "value": "TotalTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur l'ajustement d'expédition",
+          "validFor": null,
+          "value": "TotalDeliveryAdjustTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur l'ajustement des frais",
+          "validFor": null,
+          "value": "TotalFeeAdjustTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur l'ajustement des produits",
+          "validFor": null,
+          "value": "TotalProductAdjustTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur le sous-total d'expédition",
+          "validFor": null,
+          "value": "TotalDeliveryTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur le sous-total des frais",
+          "validFor": null,
+          "value": "TotalFeeTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur le sous-total des produits",
+          "validFor": null,
+          "value": "TotalProductTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total HT",
+          "validFor": null,
+          "value": "TotalAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type d'expédition",
+          "validFor": null,
+          "value": "ShipmentType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de cycle de vie",
+          "validFor": null,
+          "value": "LifeCycleType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de taxe locale",
+          "validFor": null,
+          "value": "TaxLocaleType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville",
+          "validFor": null,
+          "value": "ShipFromCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique des ordres de retour",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ReturnOrderHistory",
+  "queryable": true
+}

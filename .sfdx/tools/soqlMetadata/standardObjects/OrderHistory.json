@@ -1,0 +1,549 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de commande",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de commande",
+      "name": "OrderId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Order"
+      ],
+      "relationshipName": "Order",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activé par",
+          "validFor": null,
+          "value": "ActivatedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse d'expédition",
+          "validFor": null,
+          "value": "ShippingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse de facturation",
+          "validFor": null,
+          "value": "BillingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Geocode Accuracy",
+          "validFor": null,
+          "value": "BillingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalogue de prix",
+          "validFor": null,
+          "value": "Pricebook2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catégorie du statut",
+          "validFor": null,
+          "value": "StatusCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Client autorisé par",
+          "validFor": null,
+          "value": "CustomerAuthorizedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal d'expédition",
+          "validFor": null,
+          "value": "ShippingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal de facturation",
+          "validFor": null,
+          "value": "BillingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande active.",
+          "validFor": null,
+          "value": "orderActivated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande annulée.",
+          "validFor": null,
+          "value": "orderCancelled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande approuvée.",
+          "validFor": null,
+          "value": "orderApproved"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande désactivée.",
+          "validFor": null,
+          "value": "orderDeactivated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande expirée.",
+          "validFor": null,
+          "value": "orderExpired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Commande soumise.",
+          "validFor": null,
+          "value": "orderSubmitted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact d'expédition",
+          "validFor": null,
+          "value": "ShipToContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact de facturation",
+          "validFor": null,
+          "value": "BillToContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coût de l'expédition",
+          "validFor": null,
+          "value": "ShipmentCost__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'activation",
+          "validFor": null,
+          "value": "ActivatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'autorisation de la société",
+          "validFor": null,
+          "value": "CompanyAuthorizedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date d'autorisation du client",
+          "validFor": null,
+          "value": "CustomerAuthorizedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de début de la commande",
+          "validFor": null,
+          "value": "EffectiveDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de fin de la commande",
+          "validFor": null,
+          "value": "EndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date du bon de commande",
+          "validFor": null,
+          "value": "PoDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude d'expédition",
+          "validFor": null,
+          "value": "ShippingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de facturation",
+          "validFor": null,
+          "value": "BillingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude d'expédition",
+          "validFor": null,
+          "value": "ShippingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de facturation",
+          "validFor": null,
+          "value": "BillingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant",
+          "validFor": null,
+          "value": "NetAmount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant de la commande",
+          "validFor": null,
+          "value": "TotalAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom de la commande",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro de référence de la commande",
+          "validFor": null,
+          "value": "OrderReferenceNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro du bon de commande",
+          "validFor": null,
+          "value": "PoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro du contrat",
+          "validFor": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunité",
+          "validFor": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays d'expédition",
+          "validFor": null,
+          "value": "ShippingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays de facturation",
+          "validFor": null,
+          "value": "BillingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire de la commande",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/province d'expédition",
+          "validFor": null,
+          "value": "ShippingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/province de facturation",
+          "validFor": null,
+          "value": "BillingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue d'expédition",
+          "validFor": null,
+          "value": "ShippingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue de facturation",
+          "validFor": null,
+          "value": "BillingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Shipping Geocode Accuracy",
+          "validFor": null,
+          "value": "ShippingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Société autorisée par",
+          "validFor": null,
+          "value": "CompanyAuthorizedBy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de commande",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville d'expédition",
+          "validFor": null,
+          "value": "ShippingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville de facturation",
+          "validFor": null,
+          "value": "BillingCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique de commande",
+  "childRelationships": [],
+  "custom": false,
+  "name": "OrderHistory",
+  "queryable": true
+}

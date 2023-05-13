@@ -1,0 +1,493 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de panier",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de panier d'achat",
+      "name": "WebCartId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "WebCart"
+      ],
+      "relationshipName": "WebCart",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse de facturation",
+          "validFor": null,
+          "value": "BillingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse e-mail de l'utilisateur invité",
+          "validFor": null,
+          "value": "GuestEmailAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustement de la taxe des promotions du panier d'achat",
+          "validFor": null,
+          "value": "TotalPromoAdjustmentTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustement des promotions du panier d'achat",
+          "validFor": null,
+          "value": "TotalPromoAdjustmentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Billing Geocode Accuracy",
+          "validFor": null,
+          "value": "BillingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Boutique",
+          "validFor": null,
+          "value": "WebStore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal de facturation",
+          "validFor": null,
+          "value": "BillingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date du dernier recalcul du prix",
+          "validFor": null,
+          "value": "LastRepricingDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Deuxième prénom de l'utilisateur invité",
+          "validFor": null,
+          "value": "GuestSecondName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Est un panier d’achat secondaire",
+          "validFor": null,
+          "value": "IsSecondary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Groupe de paiement",
+          "validFor": null,
+          "value": "PaymentGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identificateur universel unique pour l'utilisateur invité",
+          "validFor": null,
+          "value": "UniversallyUniqueIdentifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "L'identificateur de la réservation d'inventaire.",
+          "validFor": null,
+          "value": "InventoryReservationIdentifier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de facturation",
+          "validFor": null,
+          "value": "BillingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de facturation",
+          "validFor": null,
+          "value": "BillingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mode de paiement",
+          "validFor": null,
+          "value": "PaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant d'ajustement total basé sur la quantité et promotionnel dans le panier d'achat",
+          "validFor": null,
+          "value": "TotalAdjustmentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total de la liste dans le panier",
+          "validFor": null,
+          "value": "TotalListAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total des produits dans le panier",
+          "validFor": null,
+          "value": "TotalProductAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total de taxe facturé dans le panier",
+          "validFor": null,
+          "value": "TotalChargeTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total de taxe sur les produits dans le panier",
+          "validFor": null,
+          "value": "TotalProductTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Montant total facturé dans le panier",
+          "validFor": null,
+          "value": "TotalChargeAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nombre total d'éléments de ligne avec des erreurs",
+          "validFor": null,
+          "value": "TotalLineItemsWithErrors"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom Complet du propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom de l'utilisateur invité",
+          "validFor": null,
+          "value": "GuestLastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du panier",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nouveau calcul du prix requis",
+          "validFor": null,
+          "value": "IsRepricingNeeded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro de bon de commande",
+          "validFor": null,
+          "value": "PoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Numéro de téléphone de l'utilisateur invité",
+          "validFor": null,
+          "value": "GuestPhoneNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays de facturation",
+          "validFor": null,
+          "value": "BillingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Politique fiscale du panier d’achat",
+          "validFor": null,
+          "value": "TaxLocaleType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Politique fiscale du panier d’achat",
+          "validFor": null,
+          "value": "TaxType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prénom de l'utilisateur invité",
+          "validFor": null,
+          "value": "GuestFirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produits uniques (UGS) dans le panier",
+          "validFor": null,
+          "value": "UniqueProductCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité totale dans le panier",
+          "validFor": null,
+          "value": "TotalProductCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/province de facturation",
+          "validFor": null,
+          "value": "BillingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue de facturation",
+          "validFor": null,
+          "value": "BillingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut",
+          "validFor": null,
+          "value": "Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version utilisée pour créer l'entité",
+          "validFor": null,
+          "value": "CreatedWithAppVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville de facturation",
+          "validFor": null,
+          "value": "BillingCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "__MISSING LABEL__ PropertyFile - val WebCart not found in section StandardHistoryLabel",
+  "childRelationships": [],
+  "custom": false,
+  "name": "WebCartHistory",
+  "queryable": true
+}

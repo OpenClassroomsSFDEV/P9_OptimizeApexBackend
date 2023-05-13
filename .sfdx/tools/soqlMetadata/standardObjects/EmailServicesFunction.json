@@ -1,0 +1,564 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de service",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Actif",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nom du service de messagerie électronique",
+      "name": "FunctionName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Accepter un e-mail de",
+      "name": "AuthorizedSenders",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Paramètres avancés de sécurité de messagerie",
+      "name": "IsAuthenticationRequired",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "TLS requis",
+      "name": "IsTlsRequired",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "All",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Accepter les pièces jointes",
+      "name": "AttachmentOption",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Aucun",
+          "validFor": null,
+          "value": "None"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Texte joint uniquement",
+          "validFor": null,
+          "value": "TextOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pièces jointes binaires uniquement",
+          "validFor": null,
+          "value": "BinaryOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Tout",
+          "validFor": null,
+          "value": "All"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Noms de pièces jointes seulement, pas de contenu",
+          "validFor": null,
+          "value": "NoContent"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de la classe",
+      "name": "ApexClassId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action de limitation du taux d'e-mails dépassée",
+      "name": "OverLimitAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Utiliser le système par défaut",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message de renvoi",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorer le message",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Replacer le message dans la file d'attente",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action de service de messagerie électronique désactivée",
+      "name": "FunctionInactiveAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Utiliser le système par défaut",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message de renvoi",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorer le message",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Replacer le message dans la file d'attente",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action d'adresse électronique désactivée",
+      "name": "AddressInactiveAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Utiliser le système par défaut",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message de renvoi",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorer le message",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Replacer le message dans la file d'attente",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action d'expéditeur non authentifié",
+      "name": "AuthenticationFailureAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Utiliser le système par défaut",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message de renvoi",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorer le message",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Replacer le message dans la file d'attente",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "UseSystemDefault",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action d'expéditeur non autorisé",
+      "name": "AuthorizationFailureAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Utiliser le système par défaut",
+          "validFor": null,
+          "value": "UseSystemDefault"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Message de renvoi",
+          "validFor": null,
+          "value": "Bounce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ignorer le message",
+          "validFor": null,
+          "value": "Discard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Replacer le message dans la file d'attente",
+          "validFor": null,
+          "value": "Requeue"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Activer l'acheminement des erreurs",
+      "name": "IsErrorRoutingEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Acheminer les e-mails d'erreur vers cette adresse e-mail",
+      "name": "ErrorRoutingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "email"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Convertir les pièces jointes au format texte en pièces jointes binaires",
+      "name": "IsTextAttachmentsAsBinary",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Service de messagerie électronique",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailServicesAddress",
+      "deprecatedAndHidden": false,
+      "field": "FunctionId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Addresses",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "EmailServicesFunction",
+  "queryable": true
+}

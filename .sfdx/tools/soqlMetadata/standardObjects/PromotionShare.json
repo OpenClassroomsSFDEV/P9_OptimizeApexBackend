@@ -1,0 +1,336 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de partage de l'objet personnalisé",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID parent",
+      "name": "ParentId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Promotion"
+      ],
+      "relationshipName": "Parent",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de l'utilisateur/du groupe",
+      "name": "UserOrGroupId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "UserOrGroup",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Accès aux objets personnalisés",
+      "name": "AccessLevel",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lecture seule",
+          "validFor": null,
+          "value": "Read"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lecture/Écriture",
+          "validFor": null,
+          "value": "Edit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "All"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Cause de ligne",
+      "name": "RowCause",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage manuel",
+          "validFor": null,
+          "value": "Manual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage",
+          "validFor": null,
+          "value": "Rule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage de compte",
+          "validFor": null,
+          "value": "ImplicitChild"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire de l'enregistrement ou partage associé",
+          "validFor": null,
+          "value": "ImplicitParent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact de la personne",
+          "validFor": null,
+          "value": "ImplicitPerson"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Équipe de vente",
+          "validFor": null,
+          "value": "Team"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle d'attribution de territoire",
+          "validFor": null,
+          "value": "Territory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territoire - Manuel",
+          "validFor": null,
+          "value": "TerritoryManual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territoire - Manuel",
+          "validFor": null,
+          "value": "Territory2AssociationManual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage de territoires",
+          "validFor": null,
+          "value": "TerritoryRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attribution de territoire pour les prévisions et les rapports",
+          "validFor": null,
+          "value": "Territory2Forecast"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage des utilisateurs invités",
+          "validFor": null,
+          "value": "GuestRule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage d'utilisateur invité associé",
+          "validFor": null,
+          "value": "GuestParentImplicit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage d'utilisateur invité associé",
+          "validFor": null,
+          "value": "GuestPersonImplicit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage d'enquête",
+          "validFor": null,
+          "value": "SurveyShare"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage de données conforme",
+          "validFor": null,
+          "value": "CompliantDataSharing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage de la cible de fabrication",
+          "validFor": null,
+          "value": "MfgTargetShare"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Collection d'enregistrements",
+          "validFor": null,
+          "value": "SharingRecordCollection"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Règle de partage de membre de la liste actionnable",
+          "validFor": null,
+          "value": "ALMAssignmentSharing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage d'attribution d'apprentissage",
+          "validFor": null,
+          "value": "LearningAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage implicite d'attribution d'apprentissage",
+          "validFor": null,
+          "value": "LearningAssignmentImplicit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partage d'attribution d'élément d'apprentissage",
+          "validFor": null,
+          "value": "LearningItemAssignment"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "label": "Partage Promotion",
+  "childRelationships": [],
+  "custom": false,
+  "name": "PromotionShare",
+  "queryable": true
+}

@@ -1,0 +1,5313 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID d'événement de modification",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de lecture",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "En-tête d'événement de modification",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom d'utilisateur",
+      "name": "Username",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom",
+      "name": "LastName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Prénom",
+      "name": "FirstName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "personname",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom complet",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom de la société",
+      "name": "CompanyName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Division",
+      "name": "Division",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Service",
+      "name": "Department",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fonction",
+      "name": "Title",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Rue",
+      "name": "Street",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ville",
+      "name": "City",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Région/Province",
+      "name": "State",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Code postal",
+      "name": "PostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Pays",
+      "name": "Country",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Latitude",
+      "name": "Latitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Longitude",
+      "name": "Longitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Précision du géocodage",
+      "name": "GeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse à proximité",
+          "validFor": null,
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bloc",
+          "validFor": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal étendu",
+          "validFor": null,
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal",
+          "validFor": null,
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voisinage",
+          "validFor": null,
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville",
+          "validFor": null,
+          "value": "City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inconnu",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Adresse",
+      "name": "Address",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "E-mail",
+      "name": "Email",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "email"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AutoBcc",
+      "name": "EmailPreferencesAutoBcc",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AutoBccStayInTouch",
+      "name": "EmailPreferencesAutoBccStayInTouch",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "StayInTouchReminder",
+      "name": "EmailPreferencesStayInTouchReminder",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Adresse de l'expéditeur de l'e-mail",
+      "name": "SenderEmail",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "email"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nom de l'expéditeur de l'e-mail",
+      "name": "SenderName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Signature du message",
+      "name": "Signature",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Objet de l'e-mail Rester en contact",
+      "name": "StayInTouchSubject",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Signature de l'e-mail Rester en contact",
+      "name": "StayInTouchSignature",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Note de l'e-mail Rester en contact",
+      "name": "StayInTouchNote",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Téléphone",
+      "name": "Phone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Télécopie",
+      "name": "Fax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mobile",
+      "name": "MobilePhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Alias",
+      "name": "Alias",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Surnom",
+      "name": "CommunityNickname",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Actif",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fuseau horaire",
+      "name": "TimeZoneSidKey",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+14:00) heure des îles de la Ligne (Pacific/Kiritimati)",
+          "validFor": null,
+          "value": "Pacific/Kiritimati"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+13:00) heure des îles Phoenix (Pacific/Enderbury)",
+          "validFor": null,
+          "value": "Pacific/Enderbury"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+13:00) heure normale des Tonga (Pacific/Tongatapu)",
+          "validFor": null,
+          "value": "Pacific/Tongatapu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:45) heure normale des îles Chatham (Pacific/Chatham)",
+          "validFor": null,
+          "value": "Pacific/Chatham"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale de Petropavlovsk-Kamchatski (Asia/Kamchatka)",
+          "validFor": null,
+          "value": "Asia/Kamchatka"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale de la Nouvelle-Zélande (Pacific/Auckland)",
+          "validFor": null,
+          "value": "Pacific/Auckland"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+12:00) heure normale des îles Fidji (Pacific/Fiji)",
+          "validFor": null,
+          "value": "Pacific/Fiji"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) heure des îles Salomon (Pacific/Guadalcanal)",
+          "validFor": null,
+          "value": "Pacific/Guadalcanal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) heure normale de l’île Norfolk (Pacific/Norfolk)",
+          "validFor": null,
+          "value": "Pacific/Norfolk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:30) heure normale de Lord Howe (Australia/Lord_Howe)",
+          "validFor": null,
+          "value": "Australia/Lord_Howe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:00) heure normale de l’Est de l’Australie (Australia/Brisbane)",
+          "validFor": null,
+          "value": "Australia/Brisbane"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:00) heure normale de l’Est de l’Australie (Australia/Sydney)",
+          "validFor": null,
+          "value": "Australia/Sydney"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:30) heure normale du centre de l’Australie (Australia/Adelaide)",
+          "validFor": null,
+          "value": "Australia/Adelaide"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:30) heure normale du centre de l’Australie (Australia/Darwin)",
+          "validFor": null,
+          "value": "Australia/Darwin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:00) heure normale de la Corée (Asia/Seoul)",
+          "validFor": null,
+          "value": "Asia/Seoul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+09:00) heure normale du Japon (Asia/Tokyo)",
+          "validFor": null,
+          "value": "Asia/Tokyo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de Hong Kong (Asia/Hong_Kong)",
+          "validFor": null,
+          "value": "Asia/Hong_Kong"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure de la Malaisie (Asia/Kuala_Lumpur)",
+          "validFor": null,
+          "value": "Asia/Kuala_Lumpur"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale des Philippines (Asia/Manila)",
+          "validFor": null,
+          "value": "Asia/Manila"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de la Chine (Asia/Shanghai)",
+          "validFor": null,
+          "value": "Asia/Shanghai"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure de Singapour (Asia/Singapore)",
+          "validFor": null,
+          "value": "Asia/Singapore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de Taipei (Asia/Taipei)",
+          "validFor": null,
+          "value": "Asia/Taipei"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) heure normale de l’Ouest de l’Australie (Australia/Perth)",
+          "validFor": null,
+          "value": "Australia/Perth"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure d’Indochine (Asia/Bangkok)",
+          "validFor": null,
+          "value": "Asia/Bangkok"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure d’Indochine (Asia/Ho_Chi_Minh)",
+          "validFor": null,
+          "value": "Asia/Ho_Chi_Minh"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+07:00) heure de l’Ouest indonésien (Asia/Jakarta)",
+          "validFor": null,
+          "value": "Asia/Jakarta"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+06:30) heure du Myanmar (Asia/Rangoon)",
+          "validFor": null,
+          "value": "Asia/Rangoon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+06:00) heure normale du Bangladesh (Asia/Dhaka)",
+          "validFor": null,
+          "value": "Asia/Dhaka"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:45) heure du Népal (Asia/Kathmandu)",
+          "validFor": null,
+          "value": "Asia/Kathmandu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:30) heure de l’Inde (Asia/Colombo)",
+          "validFor": null,
+          "value": "Asia/Colombo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:30) heure de l’Inde (Asia/Kolkata)",
+          "validFor": null,
+          "value": "Asia/Kolkata"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale du Pakistan (Asia/Karachi)",
+          "validFor": null,
+          "value": "Asia/Karachi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale de l’Ouzbékistan (Asia/Tashkent)",
+          "validFor": null,
+          "value": "Asia/Tashkent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) heure normale d’Ekaterinbourg (Asia/Yekaterinburg)",
+          "validFor": null,
+          "value": "Asia/Yekaterinburg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:30) heure de l’Afghanistan (Asia/Kabul)",
+          "validFor": null,
+          "value": "Asia/Kabul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de l’Azerbaïdjan (Asia/Baku)",
+          "validFor": null,
+          "value": "Asia/Baku"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure du Golfe (Asia/Dubai)",
+          "validFor": null,
+          "value": "Asia/Dubai"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de la Géorgie (Asia/Tbilisi)",
+          "validFor": null,
+          "value": "Asia/Tbilisi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+04:00) heure normale de l’Arménie (Asia/Yerevan)",
+          "validFor": null,
+          "value": "Asia/Yerevan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:30) heure normale d’Iran (Asia/Tehran)",
+          "validFor": null,
+          "value": "Asia/Tehran"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale d’Afrique de l’Est (Africa/Nairobi)",
+          "validFor": null,
+          "value": "Africa/Nairobi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Baghdad)",
+          "validFor": null,
+          "value": "Asia/Baghdad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Asia/Beirut)",
+          "validFor": null,
+          "value": "Asia/Beirut"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Israël (Asia/Jerusalem)",
+          "validFor": null,
+          "value": "Asia/Jerusalem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Kuwait)",
+          "validFor": null,
+          "value": "Asia/Kuwait"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de l’Arabie (Asia/Riyadh)",
+          "validFor": null,
+          "value": "Asia/Riyadh"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Athens)",
+          "validFor": null,
+          "value": "Europe/Athens"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Bucharest)",
+          "validFor": null,
+          "value": "Europe/Bucharest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure d’été d’Europe de l’Est (Europe/Helsinki)",
+          "validFor": null,
+          "value": "Europe/Helsinki"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale d’Europe de l’Est (Europe/Istanbul)",
+          "validFor": null,
+          "value": "Europe/Istanbul"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de Moscou (Europe/Minsk)",
+          "validFor": null,
+          "value": "Europe/Minsk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+03:00) heure normale de Moscou (Europe/Moscow)",
+          "validFor": null,
+          "value": "Europe/Moscow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure normale d’Europe de l’Est (Africa/Cairo)",
+          "validFor": null,
+          "value": "Africa/Cairo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure normale d’Afrique méridionale (Africa/Johannesburg)",
+          "validFor": null,
+          "value": "Africa/Johannesburg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Amsterdam)",
+          "validFor": null,
+          "value": "Europe/Amsterdam"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Berlin)",
+          "validFor": null,
+          "value": "Europe/Berlin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Brussels)",
+          "validFor": null,
+          "value": "Europe/Brussels"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Paris)",
+          "validFor": null,
+          "value": "Europe/Paris"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Prague)",
+          "validFor": null,
+          "value": "Europe/Prague"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) heure d’été d’Europe centrale (Europe/Rome)",
+          "validFor": null,
+          "value": "Europe/Rome"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure normale d’Europe centrale (Africa/Algiers)",
+          "validFor": null,
+          "value": "Africa/Algiers"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été irlandaise (Europe/Dublin)",
+          "validFor": null,
+          "value": "Europe/Dublin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été d’Europe de l’Ouest (Europe/Lisbon)",
+          "validFor": null,
+          "value": "Europe/Lisbon"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+01:00) heure d’été britannique (Europe/London)",
+          "validFor": null,
+          "value": "Europe/London"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure normale d’Europe de l’Ouest (Africa/Casablanca)",
+          "validFor": null,
+          "value": "Africa/Casablanca"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure d’été de l’Est du Groenland (America/Scoresbysund)",
+          "validFor": null,
+          "value": "America/Scoresbysund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure d’été des Açores (Atlantic/Azores)",
+          "validFor": null,
+          "value": "Atlantic/Azores"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+00:00) heure moyenne de Greenwich (GMT)",
+          "validFor": null,
+          "value": "GMT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-01:00) heure normale du Cap-Vert (Atlantic/Cape_Verde)",
+          "validFor": null,
+          "value": "Atlantic/Cape_Verde"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-02:00) heure de Géorgie du Sud (Atlantic/South_Georgia)",
+          "validFor": null,
+          "value": "Atlantic/South_Georgia"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-02:30) heure d’été de Terre-Neuve (America/St_Johns)",
+          "validFor": null,
+          "value": "America/St_Johns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure normale d’Argentine (America/Argentina/Buenos_Aires)",
+          "validFor": null,
+          "value": "America/Argentina/Buenos_Aires"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure d’été de l’Atlantique (America/Halifax)",
+          "validFor": null,
+          "value": "America/Halifax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure normale de Brasilia (America/Sao_Paulo)",
+          "validFor": null,
+          "value": "America/Sao_Paulo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) heure d’été de l’Atlantique (Atlantic/Bermuda)",
+          "validFor": null,
+          "value": "Atlantic/Bermuda"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure du Venezuela (America/Caracas)",
+          "validFor": null,
+          "value": "America/Caracas"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure d’été de l’Est (America/Indiana/Indianapolis)",
+          "validFor": null,
+          "value": "America/Indiana/Indianapolis"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure d’été de l’Est (America/New_York)",
+          "validFor": null,
+          "value": "America/New_York"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure normale de l’Atlantique (America/Puerto_Rico)",
+          "validFor": null,
+          "value": "America/Puerto_Rico"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-04:00) heure normale du Chili (America/Santiago)",
+          "validFor": null,
+          "value": "America/Santiago"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale de Colombie (America/Bogota)",
+          "validFor": null,
+          "value": "America/Bogota"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure d’été du Centre (America/Chicago)",
+          "validFor": null,
+          "value": "America/Chicago"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale du Pérou (America/Lima)",
+          "validFor": null,
+          "value": "America/Lima"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-05:00) heure normale de l’Est nord-américain (America/Panama)",
+          "validFor": null,
+          "value": "America/Panama"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure d’été des Rocheuses (America/Denver)",
+          "validFor": null,
+          "value": "America/Denver"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure normale du centre nord-américain (America/El_Salvador)",
+          "validFor": null,
+          "value": "America/El_Salvador"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-06:00) heure normale du centre nord-américain (America/Mexico_City)",
+          "validFor": null,
+          "value": "America/Mexico_City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure d’été du Pacifique (America/Los_Angeles)",
+          "validFor": null,
+          "value": "America/Los_Angeles"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure normale du Pacifique mexicain (America/Mazatlan)",
+          "validFor": null,
+          "value": "America/Mazatlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure normale des Rocheuses (America/Phoenix)",
+          "validFor": null,
+          "value": "America/Phoenix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-07:00) heure d’été du Pacifique (America/Tijuana)",
+          "validFor": null,
+          "value": "America/Tijuana"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-08:00) heure d’été de l’Alaska (America/Anchorage)",
+          "validFor": null,
+          "value": "America/Anchorage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-08:00) heure des îles Pitcairn (Pacific/Pitcairn)",
+          "validFor": null,
+          "value": "Pacific/Pitcairn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:00) heure d’été d’Hawaii - Aléoutiennes (America/Adak)",
+          "validFor": null,
+          "value": "America/Adak"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:00) heure des îles Gambier (Pacific/Gambier)",
+          "validFor": null,
+          "value": "Pacific/Gambier"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-09:30) heure des îles Marquises (Pacific/Marquesas)",
+          "validFor": null,
+          "value": "Pacific/Marquesas"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-10:00) heure normale d’Hawaii - Aléoutiennes (Pacific/Honolulu)",
+          "validFor": null,
+          "value": "Pacific/Honolulu"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-11:00) heure de Nioué (Pacific/Niue)",
+          "validFor": null,
+          "value": "Pacific/Niue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-11:00) heure normale des Samoa (Pacific/Pago_Pago)",
+          "validFor": null,
+          "value": "Pacific/Pago_Pago"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de rôle",
+      "name": "UserRoleId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserRole"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Paramètres régionaux",
+      "name": "LocaleSidKey",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Afrikaans (Afrique du Sud)",
+          "validFor": null,
+          "value": "af_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Albanais (Albanie)",
+          "validFor": null,
+          "value": "sq_AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Allemagne)",
+          "validFor": null,
+          "value": "de_DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Autriche)",
+          "validFor": null,
+          "value": "de_AT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Belgique)",
+          "validFor": null,
+          "value": "de_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Luxembourg)",
+          "validFor": null,
+          "value": "de_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Suisse)",
+          "validFor": null,
+          "value": "de_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Afrique du Sud)",
+          "validFor": null,
+          "value": "en_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Antigua-et-Barbuda)",
+          "validFor": null,
+          "value": "en_AG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Australie)",
+          "validFor": null,
+          "value": "en_AU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Bahamas)",
+          "validFor": null,
+          "value": "en_BS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Barbade)",
+          "validFor": null,
+          "value": "en_BB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Belize)",
+          "validFor": null,
+          "value": "en_BZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Bermudes)",
+          "validFor": null,
+          "value": "en_BM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Botswana)",
+          "validFor": null,
+          "value": "en_BW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Cameroun)",
+          "validFor": null,
+          "value": "en_CM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Canada)",
+          "validFor": null,
+          "value": "en_CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Érythrée)",
+          "validFor": null,
+          "value": "en_ER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Eswatini)",
+          "validFor": null,
+          "value": "en_SZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (États-Unis)",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Fidji)",
+          "validFor": null,
+          "value": "en_FJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Gambie)",
+          "validFor": null,
+          "value": "en_GM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Ghana)",
+          "validFor": null,
+          "value": "en_GH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Gibraltar)",
+          "validFor": null,
+          "value": "en_GI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Guyana)",
+          "validFor": null,
+          "value": "en_GY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Caïmans)",
+          "validFor": null,
+          "value": "en_KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Malouines)",
+          "validFor": null,
+          "value": "en_FK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Salomon)",
+          "validFor": null,
+          "value": "en_SB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Inde)",
+          "validFor": null,
+          "value": "en_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Indonésie)",
+          "validFor": null,
+          "value": "en_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Irlande)",
+          "validFor": null,
+          "value": "en_IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Jamaïque)",
+          "validFor": null,
+          "value": "en_JM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Kenya)",
+          "validFor": null,
+          "value": "en_KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Liberia)",
+          "validFor": null,
+          "value": "en_LR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Madagascar)",
+          "validFor": null,
+          "value": "en_MG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Malaisie)",
+          "validFor": null,
+          "value": "en_MY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Malawi)",
+          "validFor": null,
+          "value": "en_MW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Maurice)",
+          "validFor": null,
+          "value": "en_MU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Namibie)",
+          "validFor": null,
+          "value": "en_NA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Nigeria)",
+          "validFor": null,
+          "value": "en_NG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Nouvelle-Zélande)",
+          "validFor": null,
+          "value": "en_NZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Ouganda)",
+          "validFor": null,
+          "value": "en_UG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Pakistan)",
+          "validFor": null,
+          "value": "en_PK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Papouasie-Nouvelle-Guinée)",
+          "validFor": null,
+          "value": "en_PG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Philippines)",
+          "validFor": null,
+          "value": "en_PH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (R.A.S. chinoise de Hong Kong)",
+          "validFor": null,
+          "value": "en_HK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Royaume-Uni)",
+          "validFor": null,
+          "value": "en_GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Rwanda)",
+          "validFor": null,
+          "value": "en_RW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Sainte-Hélène)",
+          "validFor": null,
+          "value": "en_SH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Saint-Martin [partie néerlandaise])",
+          "validFor": null,
+          "value": "en_SX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Samoa)",
+          "validFor": null,
+          "value": "en_WS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Seychelles)",
+          "validFor": null,
+          "value": "en_SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Singapour)",
+          "validFor": null,
+          "value": "en_SG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Tanzanie)",
+          "validFor": null,
+          "value": "en_TZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Tonga)",
+          "validFor": null,
+          "value": "en_TO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Trinité-et-Tobago)",
+          "validFor": null,
+          "value": "en_TT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Vanuatu)",
+          "validFor": null,
+          "value": "en_VU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Algérie)",
+          "validFor": null,
+          "value": "ar_DZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Arabie saoudite)",
+          "validFor": null,
+          "value": "ar_SA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Bahreïn)",
+          "validFor": null,
+          "value": "ar_BH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Égypte)",
+          "validFor": null,
+          "value": "ar_EG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Émirats arabes unis)",
+          "validFor": null,
+          "value": "ar_AE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Irak)",
+          "validFor": null,
+          "value": "ar_IQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Jordanie)",
+          "validFor": null,
+          "value": "ar_JO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Koweït)",
+          "validFor": null,
+          "value": "ar_KW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Liban)",
+          "validFor": null,
+          "value": "ar_LB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Libye)",
+          "validFor": null,
+          "value": "ar_LY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Maroc)",
+          "validFor": null,
+          "value": "ar_MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Oman)",
+          "validFor": null,
+          "value": "ar_OM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Qatar)",
+          "validFor": null,
+          "value": "ar_QA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Soudan)",
+          "validFor": null,
+          "value": "ar_SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Syrie)",
+          "validFor": null,
+          "value": "ar_SY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Tunisie)",
+          "validFor": null,
+          "value": "ar_TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Yémen)",
+          "validFor": null,
+          "value": "ar_YE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arménien (Arménie)",
+          "validFor": null,
+          "value": "hy_AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Azerbaïdjanais (Azerbaïdjan)",
+          "validFor": null,
+          "value": "az_AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Basque (Espagne)",
+          "validFor": null,
+          "value": "eu_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bengali (Bangladesh)",
+          "validFor": null,
+          "value": "bn_BD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bengali (Inde)",
+          "validFor": null,
+          "value": "bn_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Biélorusse (Biélorussie)",
+          "validFor": null,
+          "value": "be_BY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Birman (Myanmar [Birmanie])",
+          "validFor": null,
+          "value": "my_MM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bosniaque (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "bs_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bulgare (Bulgarie)",
+          "validFor": null,
+          "value": "bg_BG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalan (Espagne)",
+          "validFor": null,
+          "value": "ca_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_CN_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine, ordre pinyin)",
+          "validFor": null,
+          "value": "zh_CN_PINYIN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Hong Kong RAS Chine, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_HK_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (R.A.S. chinoise de Hong Kong)",
+          "validFor": null,
+          "value": "zh_HK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (R.A.S. chinoise de Macao)",
+          "validFor": null,
+          "value": "zh_MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Singapour)",
+          "validFor": null,
+          "value": "zh_SG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Taïwan, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_TW_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Taïwan)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen (Corée du Nord)",
+          "validFor": null,
+          "value": "ko_KP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen (Corée du Sud)",
+          "validFor": null,
+          "value": "ko_KR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Croate (Croatie)",
+          "validFor": null,
+          "value": "hr_HR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danois (Danemark)",
+          "validFor": null,
+          "value": "da_DK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dzongkha (Bhoutan)",
+          "validFor": null,
+          "value": "dz_BT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English (Sierra Leone)",
+          "validFor": null,
+          "value": "en_SL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Argentine)",
+          "validFor": null,
+          "value": "es_AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Bolivie)",
+          "validFor": null,
+          "value": "es_BO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Chili)",
+          "validFor": null,
+          "value": "es_CL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Colombie)",
+          "validFor": null,
+          "value": "es_CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Costa Rica)",
+          "validFor": null,
+          "value": "es_CR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Cuba)",
+          "validFor": null,
+          "value": "es_CU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Équateur)",
+          "validFor": null,
+          "value": "es_EC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Espagne)",
+          "validFor": null,
+          "value": "es_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (États-Unis)",
+          "validFor": null,
+          "value": "es_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Guatemala)",
+          "validFor": null,
+          "value": "es_GT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Honduras)",
+          "validFor": null,
+          "value": "es_HN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Mexique)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Nicaragua)",
+          "validFor": null,
+          "value": "es_NI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Panama)",
+          "validFor": null,
+          "value": "es_PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Paraguay)",
+          "validFor": null,
+          "value": "es_PY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Pérou)",
+          "validFor": null,
+          "value": "es_PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Porto Rico)",
+          "validFor": null,
+          "value": "es_PR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (République dominicaine)",
+          "validFor": null,
+          "value": "es_DO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Salvador)",
+          "validFor": null,
+          "value": "es_SV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Uruguay)",
+          "validFor": null,
+          "value": "es_UY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Venezuela)",
+          "validFor": null,
+          "value": "es_VE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estonien (Estonie)",
+          "validFor": null,
+          "value": "et_EE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnois (Finlande)",
+          "validFor": null,
+          "value": "fi_FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Belgique)",
+          "validFor": null,
+          "value": "fr_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Canada)",
+          "validFor": null,
+          "value": "fr_CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Comores)",
+          "validFor": null,
+          "value": "fr_KM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (France)",
+          "validFor": null,
+          "value": "fr_FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Guinée)",
+          "validFor": null,
+          "value": "fr_GN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Haïti)",
+          "validFor": null,
+          "value": "fr_HT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Luxembourg)",
+          "validFor": null,
+          "value": "fr_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Mauritanie)",
+          "validFor": null,
+          "value": "fr_MR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Monaco)",
+          "validFor": null,
+          "value": "fr_MC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Suisse)",
+          "validFor": null,
+          "value": "fr_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Wallis-et-Futuna)",
+          "validFor": null,
+          "value": "fr_WF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gallois (Royaume-Uni)",
+          "validFor": null,
+          "value": "cy_GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Géorgien (Géorgie)",
+          "validFor": null,
+          "value": "ka_GE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Goudjarati (Inde)",
+          "validFor": null,
+          "value": "gu_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grec (Grèce)",
+          "validFor": null,
+          "value": "el_GR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hébreu (Israël)",
+          "validFor": null,
+          "value": "iw_IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hindi (Inde)",
+          "validFor": null,
+          "value": "hi_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hongrois (Hongrie)",
+          "validFor": null,
+          "value": "hu_HU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indonésien (Indonésie)",
+          "validFor": null,
+          "value": "in_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Irlandais (Irlande)",
+          "validFor": null,
+          "value": "ga_IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Islandais (Islande)",
+          "validFor": null,
+          "value": "is_IS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italien (Italie)",
+          "validFor": null,
+          "value": "it_IT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italien (Suisse)",
+          "validFor": null,
+          "value": "it_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (Japon)",
+          "validFor": null,
+          "value": "ja_JP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kannada (Inde)",
+          "validFor": null,
+          "value": "kn_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kazakh (Kazakhstan)",
+          "validFor": null,
+          "value": "kk_KZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Khmer (Cambodge)",
+          "validFor": null,
+          "value": "km_KH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kirghize (Kirghizstan)",
+          "validFor": null,
+          "value": "ky_KG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lao (Laos)",
+          "validFor": null,
+          "value": "lo_LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Letton (Lettonie)",
+          "validFor": null,
+          "value": "lv_LV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lituanien (Lituanie)",
+          "validFor": null,
+          "value": "lt_LT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luba-katanga [kiluba] (Congo-Kinshasa)",
+          "validFor": null,
+          "value": "lu_CD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luxembourgeois (Luxembourg)",
+          "validFor": null,
+          "value": "lb_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macédonien (Macédoine du Nord)",
+          "validFor": null,
+          "value": "mk_MK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malais (Brunei)",
+          "validFor": null,
+          "value": "ms_BN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malais (Malaisie)",
+          "validFor": null,
+          "value": "ms_MY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malayalam (Inde)",
+          "validFor": null,
+          "value": "ml_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maltais (Malte)",
+          "validFor": null,
+          "value": "mt_MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Marathi (Inde)",
+          "validFor": null,
+          "value": "mr_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monténégrin (Monténégro, USD)",
+          "validFor": null,
+          "value": "sh_ME_USD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monténégrin (Monténégro)",
+          "validFor": null,
+          "value": "sh_ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Aruba)",
+          "validFor": null,
+          "value": "nl_AW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Belgique)",
+          "validFor": null,
+          "value": "nl_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Pays-Bas)",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Suriname)",
+          "validFor": null,
+          "value": "nl_SR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Népalais (Népal)",
+          "validFor": null,
+          "value": "ne_NP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norvégien (Norvège)",
+          "validFor": null,
+          "value": "no_NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ourdou (Pakistan)",
+          "validFor": null,
+          "value": "ur_PK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ouzbek (latin, Ouzbékistan)",
+          "validFor": null,
+          "value": "uz_LATN_UZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pachto (Afghanistan)",
+          "validFor": null,
+          "value": "ps_AF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Persan (Iran)",
+          "validFor": null,
+          "value": "fa_IR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Polonais (Pologne)",
+          "validFor": null,
+          "value": "pl_PL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Angola)",
+          "validFor": null,
+          "value": "pt_AO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Brésil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Cap-Vert)",
+          "validFor": null,
+          "value": "pt_CV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Mozambique)",
+          "validFor": null,
+          "value": "pt_MZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Portugal)",
+          "validFor": null,
+          "value": "pt_PT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Sao Tomé-et-Principe)",
+          "validFor": null,
+          "value": "pt_ST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Romanche (Suisse)",
+          "validFor": null,
+          "value": "rm_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roumain (Moldavie)",
+          "validFor": null,
+          "value": "ro_MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roumain (Roumanie)",
+          "validFor": null,
+          "value": "ro_RO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roundi (Burundi)",
+          "validFor": null,
+          "value": "rn_BI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russe (Kazakhstan)",
+          "validFor": null,
+          "value": "ru_KZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russe (Russie)",
+          "validFor": null,
+          "value": "ru_RU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Cyrillique) (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "sr_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Cyrillique) (Serbie)",
+          "validFor": null,
+          "value": "sr_CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Latin) (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "sh_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Latin) (Serbie)",
+          "validFor": null,
+          "value": "sh_CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Serbie)",
+          "validFor": null,
+          "value": "sr_RS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovaque (Slovaquie)",
+          "validFor": null,
+          "value": "sk_SK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovène (Slovénie)",
+          "validFor": null,
+          "value": "sl_SI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somali (Djibouti)",
+          "validFor": null,
+          "value": "so_DJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somali (Somalie)",
+          "validFor": null,
+          "value": "so_SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suédois (Suède)",
+          "validFor": null,
+          "value": "sv_SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swahili (Kenya)",
+          "validFor": null,
+          "value": "sw_KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tadjik (Tadjikistan)",
+          "validFor": null,
+          "value": "tg_TJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tagalog (Philippines)",
+          "validFor": null,
+          "value": "tl_PH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamoul (Inde)",
+          "validFor": null,
+          "value": "ta_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamoul (Sri Lanka)",
+          "validFor": null,
+          "value": "ta_LK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tchèque (Tchéquie)",
+          "validFor": null,
+          "value": "cs_CZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Télougou (Inde)",
+          "validFor": null,
+          "value": "te_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Te reo (Nouvelle-Zélande)",
+          "validFor": null,
+          "value": "mi_NZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thaï (Thaïlande)",
+          "validFor": null,
+          "value": "th_TH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tigrigna (Éthiopie)",
+          "validFor": null,
+          "value": "ti_ET"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turc (Turquie)",
+          "validFor": null,
+          "value": "tr_TR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ukrainien (Ukraine)",
+          "validFor": null,
+          "value": "uk_UA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vietnamien (Viêt Nam)",
+          "validFor": null,
+          "value": "vi_VN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Xhosa (Afrique du Sud)",
+          "validFor": null,
+          "value": "xh_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yoruba (Bénin)",
+          "validFor": null,
+          "value": "yo_BJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zoulou (Afrique du Sud)",
+          "validFor": null,
+          "value": "zu_ZA"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Messages d'informations",
+      "name": "ReceivesInfoEmails",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Messages d'informations d'administration",
+      "name": "ReceivesAdminInfoEmails",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Codage des e-mails",
+      "name": "EmailEncodingKey",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unicode (UTF-8)",
+          "validFor": null,
+          "value": "UTF-8"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "E.U. & Europe de l'Ouest (ISO-8859-1, ISO-LATIN-1)",
+          "validFor": null,
+          "value": "ISO-8859-1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (Shift-JIS)",
+          "validFor": null,
+          "value": "Shift_JIS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (JIS)",
+          "validFor": null,
+          "value": "ISO-2022-JP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (EUC)",
+          "validFor": null,
+          "value": "EUC-JP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen (ks_c_5601-1987)",
+          "validFor": null,
+          "value": "ks_c_5601-1987"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois traditionnel (Big5)",
+          "validFor": null,
+          "value": "Big5"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois simplifié (GB2312)",
+          "validFor": null,
+          "value": "GB2312"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois traditionnel de Hong Kong (Big5-HKSCS)",
+          "validFor": null,
+          "value": "Big5-HKSCS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (Shift-JIS_2004)",
+          "validFor": null,
+          "value": "x-SJIS_0213"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de profil",
+      "name": "ProfileId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Profile"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Type d'utilisateur",
+      "name": "UserType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Standard",
+          "validFor": null,
+          "value": "Standard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partenaire",
+          "validFor": null,
+          "value": "PowerPartner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Responsable du portail Client",
+          "validFor": null,
+          "value": "PowerCustomerSuccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilisateur du portail Client",
+          "validFor": null,
+          "value": "CustomerSuccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Guest",
+          "validFor": null,
+          "value": "Guest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "High Volume Portal",
+          "validFor": null,
+          "value": "CspLitePortal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CSN uniquement",
+          "validFor": null,
+          "value": "CsnOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Libre-service",
+          "validFor": null,
+          "value": "SelfService"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Langue",
+      "name": "LanguageLocaleKey",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italien",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suédois",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (traditionnel)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (simplifié)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Brésil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danois",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thaï",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnois",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russe",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Mexique)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norvégien",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Numéro d'employé",
+      "name": "EmployeeNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de l'approbateur délégué",
+      "name": "DelegatedApproverId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID du responsable",
+      "name": "ManagerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Dernière connexion",
+      "name": "LastLoginDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Dernière modification ou réinitialisation du mot de passe",
+      "name": "LastPasswordChangeDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tentatives de connexion échouées",
+      "name": "NumberOfFailedLogins",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date d'expiration de la version d'essai de Offline Edition",
+      "name": "OfflineTrialExpirationDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date d'expiration de la période d'essai de Sales Anywhere",
+      "name": "OfflinePdaTrialExpirationDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Marketing",
+      "name": "UserPermissionsMarketingUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Offline",
+      "name": "UserPermissionsOfflineUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Connexion automatique au centre d'appels",
+      "name": "UserPermissionsCallCenterAutoLogin",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur d'Apex Mobile",
+      "name": "UserPermissionsMobileUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Salesforce CRM Content",
+      "name": "UserPermissionsSFContentUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Knowledge",
+      "name": "UserPermissionsKnowledgeUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de flux",
+      "name": "UserPermissionsInteractionUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Service Cloud",
+      "name": "UserPermissionsSupportUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de Data.com",
+      "name": "UserPermissionsJigsawProspectingUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateurs Site.com Contributor",
+      "name": "UserPermissionsSiteforceContributorUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateurs Site.com Publisher",
+      "name": "UserPermissionsSiteforcePublisherUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Utilisateur de WDC",
+      "name": "UserPermissionsWorkDotComUserFeature",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Autoriser les prévisions",
+      "name": "ForecastEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ActivityRemindersPopup",
+      "name": "UserPreferencesActivityRemindersPopup",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "EventRemindersCheckboxDefault",
+      "name": "UserPreferencesEventRemindersCheckboxDefault",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "TaskRemindersCheckboxDefault",
+      "name": "UserPreferencesTaskRemindersCheckboxDefault",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ReminderSoundOff",
+      "name": "UserPreferencesReminderSoundOff",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableAllFeedsEmail",
+      "name": "UserPreferencesDisableAllFeedsEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableFollowersEmail",
+      "name": "UserPreferencesDisableFollowersEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableProfilePostEmail",
+      "name": "UserPreferencesDisableProfilePostEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableChangeCommentEmail",
+      "name": "UserPreferencesDisableChangeCommentEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableLaterCommentEmail",
+      "name": "UserPreferencesDisableLaterCommentEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisProfPostCommentEmail",
+      "name": "UserPreferencesDisProfPostCommentEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ContentNoEmail",
+      "name": "UserPreferencesContentNoEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ContentEmailAsAndWhen",
+      "name": "UserPreferencesContentEmailAsAndWhen",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ApexPagesDeveloperMode",
+      "name": "UserPreferencesApexPagesDeveloperMode",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ReceiveNoNotificationsAsApprover",
+      "name": "UserPreferencesReceiveNoNotificationsAsApprover",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ReceiveNotificationsAsDelegatedApprover",
+      "name": "UserPreferencesReceiveNotificationsAsDelegatedApprover",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideCSNGetChatterMobileTask",
+      "name": "UserPreferencesHideCSNGetChatterMobileTask",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableMentionsPostEmail",
+      "name": "UserPreferencesDisableMentionsPostEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisMentionsCommentEmail",
+      "name": "UserPreferencesDisMentionsCommentEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideCSNDesktopTask",
+      "name": "UserPreferencesHideCSNDesktopTask",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideChatterOnboardingSplash",
+      "name": "UserPreferencesHideChatterOnboardingSplash",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideSecondChatterOnboardingSplash",
+      "name": "UserPreferencesHideSecondChatterOnboardingSplash",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisCommentAfterLikeEmail",
+      "name": "UserPreferencesDisCommentAfterLikeEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableLikeEmail",
+      "name": "UserPreferencesDisableLikeEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SortFeedByComment",
+      "name": "UserPreferencesSortFeedByComment",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableMessageEmail",
+      "name": "UserPreferencesDisableMessageEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "JigsawListUser",
+      "name": "UserPreferencesJigsawListUser",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableBookmarkEmail",
+      "name": "UserPreferencesDisableBookmarkEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableSharePostEmail",
+      "name": "UserPreferencesDisableSharePostEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "EnableAutoSubForFeeds",
+      "name": "UserPreferencesEnableAutoSubForFeeds",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableFileShareNotificationsForApi",
+      "name": "UserPreferencesDisableFileShareNotificationsForApi",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowTitleToExternalUsers",
+      "name": "UserPreferencesShowTitleToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowManagerToExternalUsers",
+      "name": "UserPreferencesShowManagerToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowEmailToExternalUsers",
+      "name": "UserPreferencesShowEmailToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowWorkPhoneToExternalUsers",
+      "name": "UserPreferencesShowWorkPhoneToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowMobilePhoneToExternalUsers",
+      "name": "UserPreferencesShowMobilePhoneToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowFaxToExternalUsers",
+      "name": "UserPreferencesShowFaxToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowStreetAddressToExternalUsers",
+      "name": "UserPreferencesShowStreetAddressToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowCityToExternalUsers",
+      "name": "UserPreferencesShowCityToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowStateToExternalUsers",
+      "name": "UserPreferencesShowStateToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowPostalCodeToExternalUsers",
+      "name": "UserPreferencesShowPostalCodeToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowCountryToExternalUsers",
+      "name": "UserPreferencesShowCountryToExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowProfilePicToGuestUsers",
+      "name": "UserPreferencesShowProfilePicToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowTitleToGuestUsers",
+      "name": "UserPreferencesShowTitleToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowCityToGuestUsers",
+      "name": "UserPreferencesShowCityToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowStateToGuestUsers",
+      "name": "UserPreferencesShowStateToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowPostalCodeToGuestUsers",
+      "name": "UserPreferencesShowPostalCodeToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowCountryToGuestUsers",
+      "name": "UserPreferencesShowCountryToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "PipelineViewHideHelpPopover",
+      "name": "UserPreferencesPipelineViewHideHelpPopover",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideS1BrowserUI",
+      "name": "UserPreferencesHideS1BrowserUI",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "DisableEndorsementEmail",
+      "name": "UserPreferencesDisableEndorsementEmail",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "PathAssistantCollapsed",
+      "name": "UserPreferencesPathAssistantCollapsed",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CacheDiagnostics",
+      "name": "UserPreferencesCacheDiagnostics",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowEmailToGuestUsers",
+      "name": "UserPreferencesShowEmailToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowManagerToGuestUsers",
+      "name": "UserPreferencesShowManagerToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowWorkPhoneToGuestUsers",
+      "name": "UserPreferencesShowWorkPhoneToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowMobilePhoneToGuestUsers",
+      "name": "UserPreferencesShowMobilePhoneToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowFaxToGuestUsers",
+      "name": "UserPreferencesShowFaxToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ShowStreetAddressToGuestUsers",
+      "name": "UserPreferencesShowStreetAddressToGuestUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "LightningExperiencePreferred",
+      "name": "UserPreferencesLightningExperiencePreferred",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "PreviewLightning",
+      "name": "UserPreferencesPreviewLightning",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideEndUserOnboardingAssistantModal",
+      "name": "UserPreferencesHideEndUserOnboardingAssistantModal",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideLightningMigrationModal",
+      "name": "UserPreferencesHideLightningMigrationModal",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideSfxWelcomeMat",
+      "name": "UserPreferencesHideSfxWelcomeMat",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HideBiggerPhotoCallout",
+      "name": "UserPreferencesHideBiggerPhotoCallout",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "GlobalNavBarWTShown",
+      "name": "UserPreferencesGlobalNavBarWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "GlobalNavGridMenuWTShown",
+      "name": "UserPreferencesGlobalNavGridMenuWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CreateLEXAppsWTShown",
+      "name": "UserPreferencesCreateLEXAppsWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "FavoritesWTShown",
+      "name": "UserPreferencesFavoritesWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "RecordHomeSectionCollapseWTShown",
+      "name": "UserPreferencesRecordHomeSectionCollapseWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "RecordHomeReservedWTShown",
+      "name": "UserPreferencesRecordHomeReservedWTShown",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "FavoritesShowTopFavorites",
+      "name": "UserPreferencesFavoritesShowTopFavorites",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ExcludeMailAppAttachments",
+      "name": "UserPreferencesExcludeMailAppAttachments",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SuppressTaskSFXReminders",
+      "name": "UserPreferencesSuppressTaskSFXReminders",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SuppressEventSFXReminders",
+      "name": "UserPreferencesSuppressEventSFXReminders",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "PreviewCustomTheme",
+      "name": "UserPreferencesPreviewCustomTheme",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "HasCelebrationBadge",
+      "name": "UserPreferencesHasCelebrationBadge",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "UserDebugModePref",
+      "name": "UserPreferencesUserDebugModePref",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "SRHOverrideActivities",
+      "name": "UserPreferencesSRHOverrideActivities",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "NewLightningReportRunPageEnabled",
+      "name": "UserPreferencesNewLightningReportRunPageEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID du contact",
+      "name": "ContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID du compte",
+      "name": "AccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de centre d'appels",
+      "name": "CallCenterId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CallCenter"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Extension",
+      "name": "Extension",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID de fédération SAML",
+      "name": "FederationIdentifier",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "À propos de moi",
+      "name": "AboutMe",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "N",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fréquence de résumé des e-mails Chatter",
+      "name": "DigestFrequency",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quotidien",
+          "validFor": null,
+          "value": "D"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hebdomadaire",
+          "validFor": null,
+          "value": "W"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Jamais",
+          "validFor": null,
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": "N",
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fréquence de notification par défaut en joignant des groupes",
+      "name": "DefaultGroupNotificationFrequency",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Envoyer un e-mail à chaque publication",
+          "validFor": null,
+          "value": "P"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Résumés quotidiens",
+          "validFor": null,
+          "value": "D"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Résumés hebdomadaires",
+          "validFor": null,
+          "value": "W"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Jamais",
+          "validFor": null,
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Limitation en ajouts mensuels Data.com",
+      "name": "JigsawImportLimitOverride",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Avec une photo de profil",
+      "name": "IsProfilePhotoActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "ID d'individu",
+      "name": "IndividualId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Individual"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    }
+  ],
+  "label": "Événement de modification Utilisateur",
+  "childRelationships": [],
+  "custom": false,
+  "name": "UserChangeEvent",
+  "queryable": false
+}

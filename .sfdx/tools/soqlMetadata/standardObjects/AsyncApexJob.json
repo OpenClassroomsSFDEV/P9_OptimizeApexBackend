@@ -1,0 +1,445 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de tâche Apex",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type de tâche",
+      "name": "JobType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Futur",
+          "validFor": null,
+          "value": "Future"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Recalcul de partage",
+          "validFor": null,
+          "value": "SharingRecalculation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apex planifié",
+          "validFor": null,
+          "value": "ScheduledApex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lot Apex",
+          "validFor": null,
+          "value": "BatchApex"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Travailleur Apex par lot",
+          "validFor": null,
+          "value": "BatchApexWorker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Demande de test",
+          "validFor": null,
+          "value": "TestRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Travailleur test",
+          "validFor": null,
+          "value": "TestWorker"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Jeton Apex",
+          "validFor": null,
+          "value": "ApexToken"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pour la file d'attente",
+          "validFor": null,
+          "value": "Queueable"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de la classe",
+      "name": "ApexClassId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": "ApexClass",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Statut",
+      "name": "Status",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "En file d'attente",
+          "validFor": null,
+          "value": "Queued"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Traitement",
+          "validFor": null,
+          "value": "Processing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Abandonné",
+          "validFor": null,
+          "value": "Aborted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Terminé",
+          "validFor": null,
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Échoué",
+          "validFor": null,
+          "value": "Failed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Préparation",
+          "validFor": null,
+          "value": "Preparing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "En attente",
+          "validFor": null,
+          "value": "Holding"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Lots traités",
+      "name": "JobItemsProcessed",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nombre total de lots",
+      "name": "TotalJobItems",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Échecs",
+      "name": "NumberOfErrors",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de fin",
+      "name": "CompletedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Méthode Apex",
+      "name": "MethodName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Détails du statut",
+      "name": "ExtendedStatus",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de tâche Apex",
+      "name": "ParentJobId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AsyncApexJob"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernier traité et engagé",
+      "name": "LastProcessed",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Décalage du ID dernier traité et engagé",
+      "name": "LastProcessedOffset",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    }
+  ],
+  "label": "Tâche Apex",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "ApexTestQueueItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentJobId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ApexTestResult",
+      "deprecatedAndHidden": false,
+      "field": "AsyncApexJobId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ApexTestRunResult",
+      "deprecatedAndHidden": false,
+      "field": "AsyncApexJobId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AsyncApex",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AsyncApexJob",
+      "deprecatedAndHidden": false,
+      "field": "ParentJobId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlexQueueItem",
+      "deprecatedAndHidden": false,
+      "field": "AsyncApexJobId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "AsyncApexJob",
+  "queryable": true
+}

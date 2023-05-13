@@ -1,0 +1,374 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique d'élément de ligne d'ordre de retour",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'élément d'ordre de retour",
+      "name": "ReturnOrderLineItemId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ReturnOrderLineItem"
+      ],
+      "relationshipName": "ReturnOrderLineItem",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actif",
+          "validFor": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ajustements",
+          "validFor": null,
+          "value": "TotalAdjustmentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Article commandé",
+          "validFor": null,
+          "value": "OrderItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code du type",
+          "validFor": null,
+          "value": "TypeCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emplacement de destination",
+          "validFor": null,
+          "value": "DestinationLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Emplacement source",
+          "validFor": null,
+          "value": "SourceLocation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mode de remboursement",
+          "validFor": null,
+          "value": "RepaymentMethod"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modifier le produit commandé",
+          "validFor": null,
+          "value": "ChangeOrderItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de rejet",
+          "validFor": null,
+          "value": "ReasonForRejection"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de retour",
+          "validFor": null,
+          "value": "ReasonForReturn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ordre de retour",
+          "validFor": null,
+          "value": "ReturnOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Plan de traitement",
+          "validFor": null,
+          "value": "ProcessingPlan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prix unitaire",
+          "validFor": null,
+          "value": "UnitPrice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prix unitaire brut",
+          "validFor": null,
+          "value": "GrossUnitPrice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Produit",
+          "validFor": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité attendue",
+          "validFor": null,
+          "value": "QuantityExpected"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité reçue",
+          "validFor": null,
+          "value": "QuantityReceived"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité rejetée",
+          "validFor": null,
+          "value": "QuantityRejected"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantité retournée",
+          "validFor": null,
+          "value": "QuantityReturned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sous-total de la ligne",
+          "validFor": null,
+          "value": "TotalLineAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur les ajustements",
+          "validFor": null,
+          "value": "TotalAdjustmentTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taxe sur le sous-total de la ligne",
+          "validFor": null,
+          "value": "TotalLineTaxAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unité de mesure de la quantité",
+          "validFor": null,
+          "value": "QuantityUnitOfMeasure"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique d'élément de ligne d'ordre de retour",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ReturnOrderLineItemHistory",
+  "queryable": true
+}

@@ -1,0 +1,374 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de l'individu",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'individu",
+      "name": "IndividualId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Individual"
+      ],
+      "relationshipName": "Individual",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Âge de l'individu",
+          "validFor": null,
+          "value": "IndividualsAge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autoriser le stockage des données d'identification personnelles ailleurs",
+          "validFor": null,
+          "value": "CanStorePiiElsewhere"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bloquer le suivi de la géolocalisation",
+          "validFor": null,
+          "value": "HasOptedOutGeoTracking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Civilité",
+          "validFor": null,
+          "value": "Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de décès",
+          "validFor": null,
+          "value": "DeathDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de naissance",
+          "validFor": null,
+          "value": "BirthDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exporter les données de l'individu",
+          "validFor": null,
+          "value": "SendIndividualData"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas commercialiser",
+          "validFor": null,
+          "value": "HasOptedOutSolicit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas profiler",
+          "validFor": null,
+          "value": "HasOptedOutProfiling"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas suivre",
+          "validFor": null,
+          "value": "HasOptedOutTracking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas traiter",
+          "validFor": null,
+          "value": "HasOptedOutProcessing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nombre d'enfants",
+          "validFor": null,
+          "value": "ChildrenCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nombre de condamnations",
+          "validFor": null,
+          "value": "ConvictionsCount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom complet",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du fournisseur du score de crédit consommateur",
+          "validFor": null,
+          "value": "ConsumerCreditScoreProviderName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Oublier cet individu",
+          "validFor": null,
+          "value": "ShouldForget"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prénom",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Profession",
+          "validFor": null,
+          "value": "Occupation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "IsHomeOwner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Score de crédit consommateur",
+          "validFor": null,
+          "value": "ConsumerCreditScore"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Score de l'influenceur",
+          "validFor": null,
+          "value": "InfluencerRating"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service militaire",
+          "validFor": null,
+          "value": "MilitaryService"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site Web",
+          "validFor": null,
+          "value": "Website"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique de l'individu",
+  "childRelationships": [],
+  "custom": false,
+  "name": "IndividualHistory",
+  "queryable": true
+}

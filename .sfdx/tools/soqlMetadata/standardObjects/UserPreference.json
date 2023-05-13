@@ -1,0 +1,251 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de préférence utilisateur",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'utilisateur",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "93",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Préférence",
+      "name": "Preference",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Event Reminder Default Lead Time",
+          "validFor": null,
+          "value": "57"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Task Reminder Default Time",
+          "validFor": null,
+          "value": "58"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Empêcher les journaux au chargement",
+          "validFor": null,
+          "value": "91"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Remplir automatiquement Apex après une pression sur la touche",
+          "validFor": null,
+          "value": "92"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Inspecteur Viewstate Visualforce",
+          "validFor": null,
+          "value": "93"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de prévision affichée",
+          "validFor": null,
+          "value": "94"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thème de l'éditeur",
+          "validFor": null,
+          "value": "96"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Taille de police de l'éditeur",
+          "validFor": null,
+          "value": "97"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dossiers épinglés",
+          "validFor": null,
+          "value": "98"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activer le plan de requête",
+          "validFor": null,
+          "value": "99"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activer la boîte de dialogue Ouvrir nouveau",
+          "validFor": null,
+          "value": "100"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Type de transport des e-mails",
+          "validFor": null,
+          "value": "101"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dossiers Wave épinglés",
+          "validFor": null,
+          "value": "102"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Densité",
+          "validFor": null,
+          "value": "108"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Préférences de Lightning Flow Builder",
+          "validFor": null,
+          "value": "109"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mettre en forme avec des tabulations",
+          "validFor": null,
+          "value": "111"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mettre en forme la largeur de tabulation",
+          "validFor": null,
+          "value": "112"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mettre en forme la largeur d'impression",
+          "validFor": null,
+          "value": "113"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Affichage des activités de la page d'enregistrement",
+          "validFor": null,
+          "value": "114"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Préférences de l'explorateur Lightning Flow",
+          "validFor": null,
+          "value": "118"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Préférences Migrer vers flux",
+          "validFor": null,
+          "value": "119"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Préférences Option d'authentification simple",
+          "validFor": null,
+          "value": "120"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Valeur",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "label": "Préférence utilisateur",
+  "childRelationships": [],
+  "custom": false,
+  "name": "UserPreference",
+  "queryable": true
+}

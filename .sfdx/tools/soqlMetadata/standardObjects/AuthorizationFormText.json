@@ -1,0 +1,1869 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de texte du formulaire d'autorisation",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Nom",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernier affichage",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Dernière date référencée",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de formulaire d'autorisation",
+      "name": "AuthorizationFormId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuthorizationForm"
+      ],
+      "relationshipName": "AuthorizationForm",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "URL complète du formulaire d'autorisation",
+      "name": "FullAuthorizationFormUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Texte résumé du formulaire d'autorisation",
+      "name": "SummaryAuthFormText",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Paramètres régionaux",
+      "name": "Locale",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Afrikaans (Afrique du Sud)",
+          "validFor": null,
+          "value": "af_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Équateur)",
+          "validFor": null,
+          "value": "es_EC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Luxembourg)",
+          "validFor": null,
+          "value": "fr_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Tonga)",
+          "validFor": null,
+          "value": "en_TO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Trinité-et-Tobago)",
+          "validFor": null,
+          "value": "en_TT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Aruba)",
+          "validFor": null,
+          "value": "nl_AW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Espagne)",
+          "validFor": null,
+          "value": "es_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Sao Tomé-et-Principe)",
+          "validFor": null,
+          "value": "pt_ST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Xhosa (Afrique du Sud)",
+          "validFor": null,
+          "value": "xh_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Tanzanie)",
+          "validFor": null,
+          "value": "en_TZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Latin) (Serbie)",
+          "validFor": null,
+          "value": "sh_CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Belgique)",
+          "validFor": null,
+          "value": "nl_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Ouganda)",
+          "validFor": null,
+          "value": "en_UG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tigrigna (Éthiopie)",
+          "validFor": null,
+          "value": "ti_ET"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Mauritanie)",
+          "validFor": null,
+          "value": "fr_MR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hébreu (Israël)",
+          "validFor": null,
+          "value": "iw_IL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen (Corée du Sud)",
+          "validFor": null,
+          "value": "ko_KR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (États-Unis)",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coréen (Corée du Nord)",
+          "validFor": null,
+          "value": "ko_KP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Monaco)",
+          "validFor": null,
+          "value": "fr_MC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zoulou (Afrique du Sud)",
+          "validFor": null,
+          "value": "zu_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Biélorusse (Biélorussie)",
+          "validFor": null,
+          "value": "be_BY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Yémen)",
+          "validFor": null,
+          "value": "ar_YE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Colombie)",
+          "validFor": null,
+          "value": "es_CO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Rwanda)",
+          "validFor": null,
+          "value": "en_RW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ouzbek (latin, Ouzbékistan)",
+          "validFor": null,
+          "value": "uz_LATN_UZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Chili)",
+          "validFor": null,
+          "value": "es_CL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bengali (Inde)",
+          "validFor": null,
+          "value": "bn_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Costa Rica)",
+          "validFor": null,
+          "value": "es_CR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Seychelles)",
+          "validFor": null,
+          "value": "en_SC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Comores)",
+          "validFor": null,
+          "value": "fr_KM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Salomon)",
+          "validFor": null,
+          "value": "en_SB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Cuba)",
+          "validFor": null,
+          "value": "es_CU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Singapour)",
+          "validFor": null,
+          "value": "en_SG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Sainte-Hélène)",
+          "validFor": null,
+          "value": "en_SH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English (Sierra Leone)",
+          "validFor": null,
+          "value": "en_SL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monténégrin (Monténégro, USD)",
+          "validFor": null,
+          "value": "sh_ME_USD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Azerbaïdjanais (Azerbaïdjan)",
+          "validFor": null,
+          "value": "az_AZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnois (Finlande)",
+          "validFor": null,
+          "value": "fi_FI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ourdou (Pakistan)",
+          "validFor": null,
+          "value": "ur_PK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (République dominicaine)",
+          "validFor": null,
+          "value": "es_DO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Saint-Martin [partie néerlandaise])",
+          "validFor": null,
+          "value": "en_SX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Portugal)",
+          "validFor": null,
+          "value": "pt_PT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Eswatini)",
+          "validFor": null,
+          "value": "en_SZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Philippines)",
+          "validFor": null,
+          "value": "en_PH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bengali (Bangladesh)",
+          "validFor": null,
+          "value": "bn_BD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Haïti)",
+          "validFor": null,
+          "value": "fr_HT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hongrois (Hongrie)",
+          "validFor": null,
+          "value": "hu_HU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Papouasie-Nouvelle-Guinée)",
+          "validFor": null,
+          "value": "en_PG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Arabie saoudite)",
+          "validFor": null,
+          "value": "ar_SA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Pakistan)",
+          "validFor": null,
+          "value": "en_PK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Soudan)",
+          "validFor": null,
+          "value": "ar_SD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Cyrillique) (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "sr_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roumain (Moldavie)",
+          "validFor": null,
+          "value": "ro_MD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Argentine)",
+          "validFor": null,
+          "value": "es_AR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Syrie)",
+          "validFor": null,
+          "value": "ar_SY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Bolivie)",
+          "validFor": null,
+          "value": "es_BO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Malaisie)",
+          "validFor": null,
+          "value": "en_MY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Malawi)",
+          "validFor": null,
+          "value": "en_MW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Tunisie)",
+          "validFor": null,
+          "value": "ar_TN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Hindi (Inde)",
+          "validFor": null,
+          "value": "hi_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Namibie)",
+          "validFor": null,
+          "value": "en_NA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (France)",
+          "validFor": null,
+          "value": "fr_FR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Nigeria)",
+          "validFor": null,
+          "value": "en_NG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yoruba (Bénin)",
+          "validFor": null,
+          "value": "yo_BJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malais (Malaisie)",
+          "validFor": null,
+          "value": "ms_MY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Cyrillique) (Serbie)",
+          "validFor": null,
+          "value": "sr_CS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Nouvelle-Zélande)",
+          "validFor": null,
+          "value": "en_NZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Guinée)",
+          "validFor": null,
+          "value": "fr_GN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Latin) (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "sh_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gallois (Royaume-Uni)",
+          "validFor": null,
+          "value": "cy_GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luba-katanga [kiluba] (Congo-Kinshasa)",
+          "validFor": null,
+          "value": "lu_CD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Autriche)",
+          "validFor": null,
+          "value": "de_AT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roumain (Roumanie)",
+          "validFor": null,
+          "value": "ro_RO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Taïwan, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_TW_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Caïmans)",
+          "validFor": null,
+          "value": "en_KY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maltais (Malte)",
+          "validFor": null,
+          "value": "mt_MT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Liberia)",
+          "validFor": null,
+          "value": "en_LR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Oman)",
+          "validFor": null,
+          "value": "ar_OM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dzongkha (Bhoutan)",
+          "validFor": null,
+          "value": "dz_BT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Madagascar)",
+          "validFor": null,
+          "value": "en_MG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Maurice)",
+          "validFor": null,
+          "value": "en_MU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italien (Italie)",
+          "validFor": null,
+          "value": "it_IT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Polonais (Pologne)",
+          "validFor": null,
+          "value": "pl_PL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Belgique)",
+          "validFor": null,
+          "value": "fr_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Monténégrin (Monténégro)",
+          "validFor": null,
+          "value": "sh_ME"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Turc (Turquie)",
+          "validFor": null,
+          "value": "tr_TR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Allemagne)",
+          "validFor": null,
+          "value": "de_DE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tadjik (Tadjikistan)",
+          "validFor": null,
+          "value": "tg_TJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Qatar)",
+          "validFor": null,
+          "value": "ar_QA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Suisse)",
+          "validFor": null,
+          "value": "de_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (R.A.S. chinoise de Hong Kong)",
+          "validFor": null,
+          "value": "zh_HK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine, ordre pinyin)",
+          "validFor": null,
+          "value": "zh_CN_PINYIN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Jamaïque)",
+          "validFor": null,
+          "value": "en_JM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Canada)",
+          "validFor": null,
+          "value": "fr_CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Suisse)",
+          "validFor": null,
+          "value": "fr_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vietnamien (Viêt Nam)",
+          "validFor": null,
+          "value": "vi_VN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Belgique)",
+          "validFor": null,
+          "value": "de_BE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Kenya)",
+          "validFor": null,
+          "value": "en_KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Te reo (Nouvelle-Zélande)",
+          "validFor": null,
+          "value": "mi_NZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Guyana)",
+          "validFor": null,
+          "value": "en_GY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Catalan (Espagne)",
+          "validFor": null,
+          "value": "ca_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somali (Somalie)",
+          "validFor": null,
+          "value": "so_SO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (R.A.S. chinoise de Hong Kong)",
+          "validFor": null,
+          "value": "en_HK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Pays-Bas)",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Jordanie)",
+          "validFor": null,
+          "value": "ar_JO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Islandais (Islande)",
+          "validFor": null,
+          "value": "is_IS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Irlande)",
+          "validFor": null,
+          "value": "en_IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Croate (Croatie)",
+          "validFor": null,
+          "value": "hr_HR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Indonésie)",
+          "validFor": null,
+          "value": "en_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Koweït)",
+          "validFor": null,
+          "value": "ar_KW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lituanien (Lituanie)",
+          "validFor": null,
+          "value": "lt_LT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Inde)",
+          "validFor": null,
+          "value": "en_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pachto (Afghanistan)",
+          "validFor": null,
+          "value": "ps_AF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Hong Kong RAS Chine, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_HK_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Érythrée)",
+          "validFor": null,
+          "value": "en_ER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Liban)",
+          "validFor": null,
+          "value": "ar_LB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Libye)",
+          "validFor": null,
+          "value": "ar_LY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Fidji)",
+          "validFor": null,
+          "value": "en_FJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Îles Malouines)",
+          "validFor": null,
+          "value": "en_FK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Macédonien (Macédoine du Nord)",
+          "validFor": null,
+          "value": "mk_MK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Maroc)",
+          "validFor": null,
+          "value": "ar_MA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Royaume-Uni)",
+          "validFor": null,
+          "value": "en_GB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Ghana)",
+          "validFor": null,
+          "value": "en_GH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malayalam (Inde)",
+          "validFor": null,
+          "value": "ml_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Gibraltar)",
+          "validFor": null,
+          "value": "en_GI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Gambie)",
+          "validFor": null,
+          "value": "en_GM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamoul (Sri Lanka)",
+          "validFor": null,
+          "value": "ta_LK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Cameroun)",
+          "validFor": null,
+          "value": "en_CM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italien (Suisse)",
+          "validFor": null,
+          "value": "it_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Brésil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (États-Unis)",
+          "validFor": null,
+          "value": "es_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Uruguay)",
+          "validFor": null,
+          "value": "es_UY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Venezuela)",
+          "validFor": null,
+          "value": "es_VE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danois (Danemark)",
+          "validFor": null,
+          "value": "da_DK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Angola)",
+          "validFor": null,
+          "value": "pt_AO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Grec (Grèce)",
+          "validFor": null,
+          "value": "el_GR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Australie)",
+          "validFor": null,
+          "value": "en_AU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Salvador)",
+          "validFor": null,
+          "value": "es_SV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Barbade)",
+          "validFor": null,
+          "value": "en_BB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Bermudes)",
+          "validFor": null,
+          "value": "en_BM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Bahamas)",
+          "validFor": null,
+          "value": "en_BS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Botswana)",
+          "validFor": null,
+          "value": "en_BW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Belize)",
+          "validFor": null,
+          "value": "en_BZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Canada)",
+          "validFor": null,
+          "value": "en_CA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Géorgien (Géorgie)",
+          "validFor": null,
+          "value": "ka_GE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Letton (Lettonie)",
+          "validFor": null,
+          "value": "lv_LV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ukrainien (Ukraine)",
+          "validFor": null,
+          "value": "uk_UA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Irak)",
+          "validFor": null,
+          "value": "ar_IQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thaï (Thaïlande)",
+          "validFor": null,
+          "value": "th_TH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Romanche (Suisse)",
+          "validFor": null,
+          "value": "rm_CH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russe (Kazakhstan)",
+          "validFor": null,
+          "value": "ru_KZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Bahreïn)",
+          "validFor": null,
+          "value": "ar_BH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tamoul (Inde)",
+          "validFor": null,
+          "value": "ta_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serbe (Serbie)",
+          "validFor": null,
+          "value": "sr_RS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (R.A.S. chinoise de Macao)",
+          "validFor": null,
+          "value": "zh_MO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kazakh (Kazakhstan)",
+          "validFor": null,
+          "value": "kk_KZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norvégien (Norvège)",
+          "validFor": null,
+          "value": "no_NO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Antigua-et-Barbuda)",
+          "validFor": null,
+          "value": "en_AG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Néerlandais (Suriname)",
+          "validFor": null,
+          "value": "nl_SR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Pérou)",
+          "validFor": null,
+          "value": "es_PE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Panama)",
+          "validFor": null,
+          "value": "es_PA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Persan (Iran)",
+          "validFor": null,
+          "value": "fa_IR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Algérie)",
+          "validFor": null,
+          "value": "ar_DZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Luxembourgeois (Luxembourg)",
+          "validFor": null,
+          "value": "lb_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Cap-Vert)",
+          "validFor": null,
+          "value": "pt_CV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Français (Wallis-et-Futuna)",
+          "validFor": null,
+          "value": "fr_WF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Porto Rico)",
+          "validFor": null,
+          "value": "es_PR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Égypte)",
+          "validFor": null,
+          "value": "ar_EG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Paraguay)",
+          "validFor": null,
+          "value": "es_PY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tchèque (Tchéquie)",
+          "validFor": null,
+          "value": "cs_CZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Mexique)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovaque (Slovaquie)",
+          "validFor": null,
+          "value": "sk_SK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Télougou (Inde)",
+          "validFor": null,
+          "value": "te_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suédois (Suède)",
+          "validFor": null,
+          "value": "sv_SE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Albanais (Albanie)",
+          "validFor": null,
+          "value": "sq_AL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Nicaragua)",
+          "validFor": null,
+          "value": "es_NI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Birman (Myanmar [Birmanie])",
+          "validFor": null,
+          "value": "my_MM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Khmer (Cambodge)",
+          "validFor": null,
+          "value": "km_KH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japonais (Japon)",
+          "validFor": null,
+          "value": "ja_JP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Roundi (Burundi)",
+          "validFor": null,
+          "value": "rn_BI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Basque (Espagne)",
+          "validFor": null,
+          "value": "eu_ES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bosniaque (Bosnie-Herzégovine)",
+          "validFor": null,
+          "value": "bs_BA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Népalais (Népal)",
+          "validFor": null,
+          "value": "ne_NP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Irlandais (Irlande)",
+          "validFor": null,
+          "value": "ga_IE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Slovène (Slovénie)",
+          "validFor": null,
+          "value": "sl_SI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arabe (Émirats arabes unis)",
+          "validFor": null,
+          "value": "ar_AE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tagalog (Philippines)",
+          "validFor": null,
+          "value": "tl_PH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Indonésien (Indonésie)",
+          "validFor": null,
+          "value": "in_ID"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Chine, ordre de frappe)",
+          "validFor": null,
+          "value": "zh_CN_STROKE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lao (Laos)",
+          "validFor": null,
+          "value": "lo_LA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kannada (Inde)",
+          "validFor": null,
+          "value": "kn_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swahili (Kenya)",
+          "validFor": null,
+          "value": "sw_KE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portugais (Mozambique)",
+          "validFor": null,
+          "value": "pt_MZ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malais (Brunei)",
+          "validFor": null,
+          "value": "ms_BN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allemand (Luxembourg)",
+          "validFor": null,
+          "value": "de_LU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Afrique du Sud)",
+          "validFor": null,
+          "value": "en_ZA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Somali (Djibouti)",
+          "validFor": null,
+          "value": "so_DJ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russe (Russie)",
+          "validFor": null,
+          "value": "ru_RU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Marathi (Inde)",
+          "validFor": null,
+          "value": "mr_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Kirghize (Kirghizstan)",
+          "validFor": null,
+          "value": "ky_KG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Taïwan)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Vanuatu)",
+          "validFor": null,
+          "value": "en_VU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Guatemala)",
+          "validFor": null,
+          "value": "es_GT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinois (Singapour)",
+          "validFor": null,
+          "value": "zh_SG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bulgare (Bulgarie)",
+          "validFor": null,
+          "value": "bg_BG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arménien (Arménie)",
+          "validFor": null,
+          "value": "hy_AM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Anglais (Samoa)",
+          "validFor": null,
+          "value": "en_WS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Espagnol (Honduras)",
+          "validFor": null,
+          "value": "es_HN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Goudjarati (Inde)",
+          "validFor": null,
+          "value": "gu_IN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Estonien (Estonie)",
+          "validFor": null,
+          "value": "et_EE"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Texte du formulaire d'autorisation",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationForm",
+      "deprecatedAndHidden": false,
+      "field": "DefaultAuthFormTextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AuthorizationFormConsent",
+      "deprecatedAndHidden": false,
+      "field": "AuthorizationFormTextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AuthorizationFormConsents",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AuthorizationFormTextHistory",
+      "deprecatedAndHidden": false,
+      "field": "AuthorizationFormTextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Histories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ProcessInstance",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceHistory",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "AuthorizationFormText",
+  "queryable": true
+}

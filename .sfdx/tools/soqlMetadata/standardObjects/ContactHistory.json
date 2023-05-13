@@ -1,0 +1,570 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'historique de contact",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID du contact",
+      "name": "ContactId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "Contact",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse e-mail",
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Adresse postale",
+          "validFor": null,
+          "value": "MailingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assistant",
+          "validFor": null,
+          "value": "AssistantName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asst. Téléphone",
+          "validFor": null,
+          "value": "AssistantPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre adresse",
+          "validFor": null,
+          "value": "OtherAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre code postal",
+          "validFor": null,
+          "value": "OtherPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre latitude",
+          "validFor": null,
+          "value": "OtherLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre longitude",
+          "validFor": null,
+          "value": "OtherLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre pays",
+          "validFor": null,
+          "value": "OtherCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre région/province",
+          "validFor": null,
+          "value": "OtherState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre rue",
+          "validFor": null,
+          "value": "OtherStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre téléphone",
+          "validFor": null,
+          "value": "OtherPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Autre ville",
+          "validFor": null,
+          "value": "OtherCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Civilité",
+          "validFor": null,
+          "value": "Salutation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clé Data.com",
+          "validFor": null,
+          "value": "Jigsaw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Code postal",
+          "validFor": null,
+          "value": "MailingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact fusionné",
+          "validFor": null,
+          "value": "contactMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé par conversion de piste",
+          "validFor": null,
+          "value": "contactCreatedFromLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de naissance",
+          "validFor": null,
+          "value": "Birthdate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Date de renvoi d'e-mail",
+          "validFor": null,
+          "value": "EmailBouncedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Désinscription d'adresse e-mail",
+          "validFor": null,
+          "value": "HasOptedOutOfEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Désinscription de télécopie",
+          "validFor": null,
+          "value": "HasOptedOutOfFax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fonction",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identité sexuelle",
+          "validFor": null,
+          "value": "GenderIdentity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu",
+          "validFor": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Languages",
+          "validFor": null,
+          "value": "Languages__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude de publipostage",
+          "validFor": null,
+          "value": "MailingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Level",
+          "validFor": null,
+          "value": "Level__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude de publipostage",
+          "validFor": null,
+          "value": "MailingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Geocode Accuracy",
+          "validFor": null,
+          "value": "MailingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de renvoi d'e-mail",
+          "validFor": null,
+          "value": "EmailBouncedReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ne pas appeler",
+          "validFor": null,
+          "value": "DoNotCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom complet",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Nom du compte",
+          "validFor": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Origine de la piste",
+          "validFor": null,
+          "value": "LeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Geocode Accuracy",
+          "validFor": null,
+          "value": "OtherGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pays",
+          "validFor": null,
+          "value": "MailingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Piste convertie en contact",
+          "validFor": null,
+          "value": "contactUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prénom",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pronoms",
+          "validFor": null,
+          "value": "Pronouns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire du contact",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Région/Province",
+          "validFor": null,
+          "value": "MailingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Responsable hiérarchique",
+          "validFor": null,
+          "value": "ReportsTo"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rue",
+          "validFor": null,
+          "value": "MailingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service",
+          "validFor": null,
+          "value": "Department"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Statut de mise à jour",
+          "validFor": null,
+          "value": "CleanStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Télécopie",
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone",
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone (domicile)",
+          "validFor": null,
+          "value": "HomePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléphone mobile",
+          "validFor": null,
+          "value": "MobilePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ville",
+          "validFor": null,
+          "value": "MailingCity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique du contact",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContactHistory",
+  "queryable": true
+}

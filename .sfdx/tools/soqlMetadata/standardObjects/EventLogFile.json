@@ -1,0 +1,738 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID d'event log file",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de dernière modification",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID dernière modification par",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Horodateur des modifications du système",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type d'événement",
+      "name": "EventType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API",
+          "validFor": null,
+          "value": "API"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Utilisation totale d'API",
+          "validFor": null,
+          "value": "ApiTotalUsage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel Apex",
+          "validFor": null,
+          "value": "ApexCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exécution Apex",
+          "validFor": null,
+          "value": "ApexExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API REST Apex",
+          "validFor": null,
+          "value": "ApexRestApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SOAP Apex",
+          "validFor": null,
+          "value": "ApexSoap"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Déclencheur Apex",
+          "validFor": null,
+          "value": "ApexTrigger"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exception Apex inattendue",
+          "validFor": null,
+          "value": "ApexUnexpectedException"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exécution de rapport asynchrone",
+          "validFor": null,
+          "value": "AsyncReportRun"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement d’infraction CORS",
+          "validFor": null,
+          "value": "CorsViolation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Requête Aura",
+          "validFor": null,
+          "value": "AuraRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Limite Apex en exécutions longues concurrentes",
+          "validFor": null,
+          "value": "ConcurrentLongRunningApexLimit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel externe de continuation",
+          "validFor": null,
+          "value": "ContinuationCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel inter-organisations externe",
+          "validFor": null,
+          "value": "ExternalCrossOrgCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel Apex personnalisé externe",
+          "validFor": null,
+          "value": "ExternalCustomApexCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel de la source de données externe",
+          "validFor": null,
+          "value": "ExternalDataSourceCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appel OData externe",
+          "validFor": null,
+          "value": "ExternalODataCallout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API de transfert en masse",
+          "validFor": null,
+          "value": "BulkApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API de transfert en masse 2.0",
+          "validFor": null,
+          "value": "BulkApi2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opération d'ensemble de modifications",
+          "validFor": null,
+          "value": "ChangeSetOperation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Console",
+          "validFor": null,
+          "value": "Console"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Distribution de contenu",
+          "validFor": null,
+          "value": "ContentDistribution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lien de document de contenu",
+          "validFor": null,
+          "value": "ContentDocumentLink"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfert de contenu",
+          "validFor": null,
+          "value": "ContentTransfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tableau de bord",
+          "validFor": null,
+          "value": "Dashboard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléchargements de documents joints",
+          "validFor": null,
+          "value": "DocumentAttachmentDownloads"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exécution de flux",
+          "validFor": null,
+          "value": "FlowExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Redirections de nom d'hôte",
+          "validFor": null,
+          "value": "HostnameRedirects"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ressources externes non sécurisées",
+          "validFor": null,
+          "value": "InsecureExternalAssets"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vue d'article Knowledge",
+          "validFor": null,
+          "value": "KnowledgeArticleView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Erreur Lightning",
+          "validFor": null,
+          "value": "LightningError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interaction Lightning",
+          "validFor": null,
+          "value": "LightningInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vue de page Lightning",
+          "validFor": null,
+          "value": "LightningPageView"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Performance Lightning",
+          "validFor": null,
+          "value": "LightningPerformance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connexion",
+          "validFor": null,
+          "value": "Login"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Connexion en tant que",
+          "validFor": null,
+          "value": "LoginAs"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Déconnexion",
+          "validFor": null,
+          "value": "Logout"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opération d'API de métadonnées",
+          "validFor": null,
+          "value": "MetadataApiOperation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rapport à blocs multiples",
+          "validFor": null,
+          "value": "MultiBlockReport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Identifiant nommé",
+          "validFor": null,
+          "value": "NamedCredential"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Un usage Commerce",
+          "validFor": null,
+          "value": "OneCommerceUsage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Installation de package",
+          "validFor": null,
+          "value": "PackageInstall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exécution mise en file d'attente",
+          "validFor": null,
+          "value": "QueuedExecution"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rapport",
+          "validFor": null,
+          "value": "Report"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Exportation de rapport",
+          "validFor": null,
+          "value": "ReportExport"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "API REST",
+          "validFor": null,
+          "value": "RestApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sandbox",
+          "validFor": null,
+          "value": "Sandbox"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rechercher",
+          "validFor": null,
+          "value": "Search"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Clic sur rechercher",
+          "validFor": null,
+          "value": "SearchClick"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sites",
+          "validFor": null,
+          "value": "Sites"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cryptage de la plate-forme",
+          "validFor": null,
+          "value": "PlatformEncryption"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Workflow temporel",
+          "validFor": null,
+          "value": "TimeBasedWorkflow"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sécurité des transactions",
+          "validFor": null,
+          "value": "TransactionSecurity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suivi d'interface utilisateur",
+          "validFor": null,
+          "value": "UITracking"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "URI",
+          "validFor": null,
+          "value": "URI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Requête Visualforce",
+          "validFor": null,
+          "value": "VisualforceRequest"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Modification Wave",
+          "validFor": null,
+          "value": "WaveChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Téléchargement Wave",
+          "validFor": null,
+          "value": "WaveDownload"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Interaction Wave",
+          "validFor": null,
+          "value": "WaveInteraction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Performances Wave",
+          "validFor": null,
+          "value": "WavePerformance"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date du journal",
+      "name": "LogDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Longueur du fichier journal",
+      "name": "LogFileLength",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type de contenu du fichier journal",
+      "name": "LogFileContentType",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Version API",
+      "name": "ApiVersion",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Séquence",
+      "name": "Sequence",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Période",
+      "name": "Interval",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Horaire",
+          "validFor": null,
+          "value": "Hourly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quotidien",
+          "validFor": null,
+          "value": "Daily"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Noms de champ du fichier journal",
+      "name": "LogFileFieldNames",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Types de champ du fichier journal",
+      "name": "LogFileFieldTypes",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fichier journal",
+      "name": "LogFile",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "base64"
+    }
+  ],
+  "label": "Event Log File",
+  "childRelationships": [],
+  "custom": false,
+  "name": "EventLogFile",
+  "queryable": true
+}

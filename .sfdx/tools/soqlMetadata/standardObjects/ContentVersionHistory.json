@@ -1,0 +1,339 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID de version de contenu",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Supprimé",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID ContentVersion",
+      "name": "ContentVersionId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentVersion"
+      ],
+      "relationshipName": "ContentVersion",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "ID créé par",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Date de création",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Champ modifié",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Confidentialité des fichiers dans les enregistrements",
+          "validFor": null,
+          "value": "SharingPrivacy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Créé.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document externe Info1",
+          "validFor": null,
+          "value": "ExternalDocumentInfo1"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Document externe Info2",
+          "validFor": null,
+          "value": "ExternalDocumentInfo2"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Données de version remplacées",
+          "validFor": null,
+          "value": "contentVersionDataReplaced"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Empêcher les autres de partager et d'annuler le partage",
+          "validFor": null,
+          "value": "SharingOption"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement déverrouillé.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Enregistrement verrouillé.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Événement de fil",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individu fusionné",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Langue",
+          "validFor": null,
+          "value": "Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Motif de la modification",
+          "validFor": null,
+          "value": "ReasonForChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire",
+          "validFor": null,
+          "value": "Owner"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Accepté)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Propriétaire (Attribution)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source de données externe",
+          "validFor": null,
+          "value": "ExternalDataSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Titre",
+          "validFor": null,
+          "value": "Title"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "URL de contenu",
+          "validFor": null,
+          "value": "ContentUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version affichée",
+          "validFor": null,
+          "value": "contentVersionViewed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version commentée",
+          "validFor": null,
+          "value": "contentVersionCommented"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version créée",
+          "validFor": null,
+          "value": "contentVersionCreated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version évaluée",
+          "validFor": null,
+          "value": "contentVersionRated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version majeure",
+          "validFor": null,
+          "value": "IsMajorVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version mise à jour",
+          "validFor": null,
+          "value": "contentVersionUpdated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version supprimée",
+          "validFor": null,
+          "value": "contentVersionDeleted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Version téléchargée",
+          "validFor": null,
+          "value": "contentVersionDownloaded"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Ancienne valeur",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Nouvelle valeur",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Historique des versions de contenu",
+  "childRelationships": [],
+  "custom": false,
+  "name": "ContentVersionHistory",
+  "queryable": true
+}
