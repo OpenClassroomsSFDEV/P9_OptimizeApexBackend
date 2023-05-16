@@ -8,9 +8,9 @@ private with sharing class MyTeamOrdersControllerTest {
         // Generate accounts list
         List<Account> accountsList = TestDataFactory.generateAccountsList(10);
         // Generate product
-        Product2 jean = TestDataFactory.generateProduct();
+        Product2 teeshirt = TestDataFactory.generateProduct();
         // Generate pricebook entry
-        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(jean);
+        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(teeshirt);
         // Generate orders list
         List<Order> ordersList = TestDataFactory.generateOrdersList(pbe, accountsList, 10, 15);
         // Generate order items list

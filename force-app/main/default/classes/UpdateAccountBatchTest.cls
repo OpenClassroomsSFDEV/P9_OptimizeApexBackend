@@ -7,8 +7,8 @@ private with sharing class UpdateAccountBatchTest {
         // Generate a list of 200 accounts
         List<Account> accountsList = TestDataFactory.generateAccountsList(200);
         // Generate a product and a corresponding PricebookEntry
-        Product2 jean = TestDataFactory.generateProduct();
-        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(jean);
+        Product2 teeshirt = TestDataFactory.generateProduct();
+        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(teeshirt);
         // Generate a list of 200 orders with 1 item each for generated accounts
         List<Order> ordersList = TestDataFactory.generateOrdersList(pbe, accountsList, 200, 10);
         // Generate an OrderItem for each order

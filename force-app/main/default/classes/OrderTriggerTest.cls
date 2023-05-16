@@ -8,8 +8,8 @@ private with sharing class OrderTriggerTest {
         List<Account> accList = TestDataFactory.generateAccountsList(1);
 
         // Créer un produit et un PricebookEntry à partir de ce produit
-        Product2 jean = TestDataFactory.generateProduct();
-        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(jean);
+        Product2 teeshirt = TestDataFactory.generateProduct();
+        PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(teeshirt);
 
         // Créer une liste de commandes pour le PricebookEntry et les comptes donnés
         // avec une quantité de 10 et un coût de livraison de 25
@@ -79,8 +79,8 @@ private with sharing class OrderTriggerTest {
     System.debug(accList);
 
     // Generates a product, a PricebookEntry, a list of 125 orders and an associated item
-    Product2 jean = TestDataFactory.generateProduct();
-    PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(jean);
+    Product2 teeshirt = TestDataFactory.generateProduct();
+    PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(teeshirt);
     List<Order> ordersList = TestDataFactory.generateOrdersList(pbe, accList, 125, 25);
     OrderItem item = TestDataFactory.generateOrderItemsList(ordersList, pbe, 1);
 

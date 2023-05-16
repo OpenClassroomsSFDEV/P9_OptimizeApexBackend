@@ -34,9 +34,9 @@ public with sharing class TestDataFactory {
     * @return Product2
     */
     public static Product2 generateProduct() {
-        Product2 jean = new Product2(Name = 'Jean stylé', Family = 'Bas',  IsActive = true);
-        insert jean;
-        return jean;
+        Product2 teeshirt = new Product2(Name = 'Teeshirt violet', Family = 'Haut',  IsActive = true);
+        insert teeshirt;
+        return teeshirt;
     }
      
    /**
