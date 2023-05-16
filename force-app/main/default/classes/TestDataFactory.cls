@@ -1,74 +1,130 @@
 // Cette classe est utilisée pour créer des données de test pour les tests de déclencheurs et de contrôleurs.
 @isTest
 public with sharing class TestDataFactory {
-    
-    // Cette fonction retourne un compte et reçoit en paramètres le nombre de commandes, de produits de commande, la quantité de chaque produit de commande, le statut de chaque commande, le coût d'expédition de commande et les insère dans la base de données
-    public static Account createOneAccountWithOrdsAndOrdProducts(Integer numOrders, Integer orderShipmentCost, Integer numOrderProduct, Integer orderProductQuantity, Integer orderProductPrice, String orderStatus) {
-        
-    // Définir un point de sauvegarde pour pouvoir annuler toutes les opérations de base de données si nécessaire.
-        Savepoint sp = Database.setSavepoint();
-        
-    // Créer un produit de test.
-        Product2 pd = new Product2(Name = 'ProductTest', Family = 'family', IsActive = true);
-        insert pd;
 
-    // Créer une entrée de catalogue de prix pour le produit créé.
-        PricebookEntry pbe = new PricebookEntry(Pricebook2Id = Test.getStandardPricebookId(), Product2Id = pd.Id, UnitPrice = 50000, IsActive = true);
+    /**
+    * Method to generate Accounts
+    * @param Integer : number of accounts to create
+    * @return List<Account>
+    */
+    public static List<Account> generateAccountsList(Integer numberOfAccountsToCreate) {
+        List<Account> accList = new List<Account>();
+        for(Integer i = 0; i < numberOfAccountsToCreate; i++) {
+            Account acc = new Account(Name = 'Test'+i);
+            accList.add(acc);
+        }
+        insert accList;
+        return accList;
+    }
+ 
+  /**
+    * Method to generate a Pricebook
+    * @return Pricebook2
+    */
+    public static Pricebook2 generatePricebook() {
+        Pricebook2 fashaPriceBook = new Pricebook2(Name = 'Catalogue Fasha - Test',
+                                                   Description = 'Pricebook for test', 
+                                                   IsActive = true);
+        insert fashaPriceBook;
+        return fashaPriceBook;
+    }
+
+    /**
+    * Method to generate generateProduct
+    * @return Product2
+    */
+    public static Product2 generateProduct() {
+        Product2 jean = new Product2(Name = 'Jean stylé', Family = 'Bas',  IsActive = true);
+        insert jean;
+        return jean;
+    }
+     
+   /**
+    * Method to generate generatePriceBookEntry
+    * @param Product2 : related product
+    * @return PricebookEntry
+    */
+    public static PricebookEntry generatePriceBookEntry(Product2 product) {
+        PricebookEntry pbe = new PricebookEntry(
+            Pricebook2Id = Test.getStandardPricebookId(),
+            Product2Id = product.Id,
+            UnitPrice = 75,
+            IsActive = true
+        );
         insert pbe;
-        
-    // Créer un compte pour les commandes.
-        Account acct = new Account(Name = 'TestAccount');
-        insert acct;
-        
-    // Créer une liste de commandes et les insérer dans la base de données.
-        List<Order> ords = new List<Order>();
-        for(Integer k = 0; k < numOrders; k++) {
-            ords.add(new Order(AccountId = acct.Id, Pricebook2Id = Test.getStandardPricebookId(), Status = orderStatus, ShipmentCost__c = orderShipmentCost, EffectiveDate = System.today() + k));
-        }
-        insert ords;
+        return pbe;
+    }
+ 
+    /**
+    * Method to generate Orders
+    * @param PricebookEntry : related pricebook entry
+    * @param List<Account> : list of Accounts
+    * @param Integer : number of orders to create
+    * @param Integer : shipment cost
+    * @return List<Order>
+    */
+    public static List<Order> generateOrdersList(PricebookEntry pbe, List<Account> accList, Integer numberOfOrdersToCreate, Integer shipmentCost) {
+        List<Order> ordersList = new List<Order>();
+        List<Contract> contractsList = new List<Contract>();
 
-    // Créer une liste de produits de commande et les insérer dans la base de données.
-        List<OrderItem> ordItems = new List<OrderItem>();
-        for (Integer l = 0; l < numOrders; l++) {
-            Order o = ords[l];
-            for (Integer m = 0; m < numOrderProduct; m++) {
-                ordItems.add(new OrderItem(OrderId = o.Id, Product2Id = pd.Id, PriceBookEntryId = pbe.Id, Quantity = orderProductQuantity, UnitPrice = orderProductPrice));
-            }
+        // Create contracts for each account in the list
+        for (Account acc : accList) {
+            Contract contract = new contract(
+                AccountId = acc.id,
+                Status = 'Draft',
+                ContractTerm = 10
+            );
+            contractsList.add(contract);
         }
-        insert ordItems;
-        
-    // Retourner le compte créé.
-        return acct;
+        insert contractsList;
+
+        // Create orders with the given pricebook entry and shipment cost
+        for(Integer i = 0; i < numberOfOrdersToCreate; i++){
+            Order ordr = new Order(AccountId = accList[0].Id,
+                                Status = 'Draft',
+                                EffectiveDate = Date.today(),
+                                Pricebook2Id = pbe.Pricebook2Id,
+                                shipmentCost__c = shipmentCost);
+            ordersList.add(ordr);
+        }
+        insert ordersList;
+        return ordersList;
     }
+    /**
+    * Method to generate Order Items
+    * @param List<Order> : list of Orders
+    * @param PricebookEntry : a price book entry
+    * @param Integer : quantity of items
+    * @return OrderItem
+    */
+    public static OrderItem generateOrderItemsList(List<Order> ordersList, PricebookEntry pbe, Integer quantity) {
+
+        // Create an empty list to store the OrderItems
+        List<OrderItem> orderItemList = new List<OrderItem>();
     
-    // Cette fonction retourne plusieurs comptes et reçoit en paramètres le nombre de comptes, de commandes, de produits de commande, la quantité de chaque produit de commande, le statut de chaque commande, le coût d'expédition de commande et les insère dans la base de données 
-    public static List<Account> createMultipleAccountWithOrdsAndOrdProducts(Integer numAccounts, Integer numOrders, Integer orderShipmentCost, Integer numOrderProduct, Integer orderProductQuantity, Integer orderProductPrice, String orderStatus) {
-    // Définir un point de sauvegarde pour pouvoir annuler toutes les opérations de base de données si nécessaire.
-        Savepoint sp = Database.setSavepoint();
-        
-    // Créer une liste de comptes en appelant la fonction createOneAccountWithOrdsAndOrdProducts.
-        List<Account> accts = new List<Account>();
-            for(Integer k = 0; k < numAccounts; k++) {
-                Account acct = createOneAccountWithOrdsAndOrdProducts(numOrders, orderShipmentCost, numOrderProduct, orderProductQuantity, orderProductPrice, orderStatus);
-                    accts.add(acct);
-                }                                                                                
-        upsert accts;
-        return accts;
-                                        
+        // Create a variable to store the last OrderItem that was created
+        OrderItem itemToReturn;
+    
+        // Loop through the list of Orders
+        for(Order o : ordersList) {
+    
+            // Create a new OrderItem with the Order's Id, the PricebookEntry's Id, the quantity, and the unit price
+            itemToReturn = new OrderItem(OrderId = o.Id,
+                                         PricebookEntryId = pbe.Id,
+                                         Quantity = quantity,
+                                         UnitPrice = pbe.UnitPrice);
+    
+            // Add the new OrderItem to the list of OrderItems
+            orderItemList.add(itemToReturn);
+        }
+    
+        // Insert all the OrderItems into the database
+        insert orderItemList;
+    
+        // Update all the Orders in the list to ensure that the OrderItem records are associated with them
+        update ordersList;
+    
+        // Return the last OrderItem that was created
+        return itemToReturn;
     }
-    // modifier le statut d'une liste de commandes et de les insérer dans la base de données 
-    public static void setOrderStatusToOrdered(List<Order> ods,Integer orderNumber){
-    // créer une nouvelle liste de commandes appelée "ords"
-        List<Order> ords = new List<Order>();
-    // boucle sur le nombre de commandes spécifié en paramètre et pour chaque commande
-        for(Integer n=0;n<orderNumber;n++){
-        Order od = ods[n];
-    // modifie son statut en "Ordered"
-        od.Status = 'Ordered';
-    // ajoute à la liste "ords"
-        ords.add(od);
-    }
-    //mettre à jour la liste "ords" dans la base de données avec les nouvelles valeurs du statut des commandes
-    update ords;
-}
-    }
+ }
