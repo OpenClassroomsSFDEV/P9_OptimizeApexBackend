@@ -1,34 +1,34 @@
 @isTest
 private with sharing class OrderTriggerTest {
    
-    // Cette méthode crée les données nécessaires pour les tests
+    // This method creates the data needed for testing
     @TestSetup
     static void makeData(){
-        // Créer une liste de comptes
+        // Create a list of accounts
         List<Account> accList = TestDataFactory.generateAccountsList(1);
 
-        // Créer un produit et un PricebookEntry à partir de ce produit
+        // Create a product and a PricebookEntry from this product
         Product2 teeshirt = TestDataFactory.generateProduct();
         PricebookEntry pbe = TestDataFactory.generatePriceBookEntry(teeshirt);
 
-        // Créer une liste de commandes pour le PricebookEntry et les comptes donnés
-        // avec une quantité de 10 et un coût de livraison de 25
+        // Create an order list for the PricebookEntry and the given accounts
+        // with a quantity of 10 and a delivery cost of 25
         List<Order> ordersList = TestDataFactory.generateOrdersList(pbe, accList, 10, 25);
 
-        // Générer une liste d'éléments de commande pour chaque commande de la liste de commandes
-        // et les insérer dans la base de données
+        // Generate a list of command items for each command in the command list
+        // and insert them into the database
         OrderItem item = TestDataFactory.generateOrderItemsList(ordersList, pbe, 1);
     }
 
-     // Ce test vérifie que la méthode de déclenchement OrderTrigger.setOrderNetAmount calcule correctement
-    // le montant net de la commande et le met à jour dans l'objet Order
+     // This test verifies that the OrderTrigger.setOrderNetAmount trigger method calculates correctly
+    // the net amount of the order and updates it in the Order object
     @isTest
     private static void setOrderNetAmountTest() {
-        // Récupérer toutes les commandes de la base de données
+        // Retrieve all orders from database
         List<Order> ordersList = [SELECT AccountId, Status, TotalAmount, ShipmentCost__c, NetAmount__c FROM Order];
         List<Order> ordersToUpdate = new List<Order>();
 
-        // Mettre à jour le statut de chaque commande en 'Ordered' et les ajouter à la liste d'ordres à mettre à jour
+        // Update the status of each order to 'Ordered' and add them to the list of orders to update
         Test.startTest();
         for(Order o : ordersList) {
             o.Status = 'Ordered';
@@ -37,15 +37,15 @@ private with sharing class OrderTriggerTest {
         update ordersToUpdate;
         Test.stopTest();
 
-        // Récupérer les commandes mises à jour
+        // Retrieve updated commands
         List<Order> ordersUpdated = [SELECT Id, TotalAmount, ShipmentCost__c, NetAmount__c FROM Order WHERE Status = 'Ordered'];
         
-        // Vérifier que le montant net de la première commande mise à jour est correct
+        // Check that the net amount of the first updated order is correct
         System.assertEquals(50, ordersUpdated[0].get('NetAmount__c'));
     }
 
-      // Ce test vérifie que la méthode de déclenchement OrderTrigger.setAccountRevenuesUpdate calcule correctement
-    // le chiffre d'affaires total pour un compte ayant 10 commandes et met à jour l'objet Account avec cette valeur
+      // This test verifies that the OrderTrigger.setAccountRevenuesUpdate trigger method calculates correctly
+    // the total revenue for an account with 10 orders and updates the Account object with this value
     @isTest
     private static void setAccountRevenuesUpdateTestWith10Orders() {
 
